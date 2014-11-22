@@ -1,0 +1,27 @@
+{
+  "name": "Kwik-E-Mart",
+  "version": "0.0.0",
+  "description": "e-commerce based on hapi.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accosine/Kwik-E-Mart.git"
+  },
+  "keywords": [
+    "e-commerce",
+    "shop",
+    "hapi.js"
+  ],
+  "author": "accosine",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/accosine/Kwik-E-Mart/issues"
+  },
+  "homepage": "https://github.com/accosine/Kwik-E-Mart",
+  "dependencies": {
+    "hapi": "^8.0.0-rc3"
+  }
+}
