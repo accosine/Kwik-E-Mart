@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/accosine/Kwik-E-Mart",
   "dependencies": {
+    "catbox-redis": "^1.0.4",
+    "confidence": "^1.0.0",
     "hapi": "^8.0.0-rc3"
   }
 }
