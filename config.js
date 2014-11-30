@@ -11,16 +11,26 @@ store = new Confidence.Store({
       port: 8080
     }
   },
+  debug: {
+    $filter: 'env',
+    production: {
+      request: ['error']
+    },
+    $default: false
+  },
   cache: {
     $filter: 'env',
     production: {
-      engine: 'catbox-redis',
+      engine: require('catbox-redis'),
       host: process.env.REDISHOST !== null ? process.env.REDISHOST : void 0,
       port: process.env.REDISPORT !== null ? process.env.REDISPORT : void 0,
-      password: process.env.REDISPWD !== null ? process.env.REDISPWD : void 0
+      password: process.env.REDISPWD !== null ? process.env.REDISPWD : void 0,
+      partition: 'Kwik-E-Mart'
+      // name: 'seperate cache name'
     },
     $default: {
-      engine: 'catbox-redis',
+      engine: require('catbox-redis'),
+      partition: 'Kwik-E-Mart'
     }
   },
   database: {

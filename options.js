@@ -1,15 +1,8 @@
 var config = require('./config');
 
 var server = {
-  cache: {
-    engine: require(config.get('/cache/engine')),
-    options: {
-      host: config.get('/cache/host'),
-      port: config.get('/cache/port'),
-      password: config.get('/cache/password')
-    }
-  }
-  //debug: { request: ['error']}
+  debug: config.get('/debug'),
+  cache: config.get('/cache')
 };
 
 var connection = {
