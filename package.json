@@ -24,7 +24,9 @@
   "dependencies": {
     "catbox-redis": "^1.0.4",
     "confidence": "^1.0.0",
-    "hapi": "^8.0.0-rc3"
+    "handlebars": "^2.0.0",
+    "hapi": "^8.0.0-rc3",
+    "hapi-auth-cookie": "^2.0.0-rc1"
   },
   "devDependencies": {
     "code": "^1.2.1",

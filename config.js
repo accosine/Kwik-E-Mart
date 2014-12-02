@@ -1,4 +1,6 @@
-var Confidence = require('confidence');
+var Confidence = require('confidence')
+  , path = require('path');
+
 var criteria, store;
 
 store = new Confidence.Store({
@@ -16,7 +18,10 @@ store = new Confidence.Store({
     production: {
       request: ['error']
     },
-    $default: false
+    $default: {
+      request: ['error'],
+      log: ['error']
+    }
   },
   cache: {
     $filter: 'env',
@@ -48,3 +53,4 @@ criteria = {
 exports.get = function(key) {
   return store.get(key, criteria);
 };
+
