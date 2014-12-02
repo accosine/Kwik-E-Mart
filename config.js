@@ -1,4 +1,6 @@
-var Confidence = require('confidence');
+var Confidence = require('confidence')
+  , path = require('path');
+
 var criteria, store;
 
 store = new Confidence.Store({
@@ -48,3 +50,4 @@ criteria = {
 exports.get = function(key) {
   return store.get(key, criteria);
 };
+
