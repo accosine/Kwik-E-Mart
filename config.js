@@ -18,7 +18,10 @@ store = new Confidence.Store({
     production: {
       request: ['error']
     },
-    $default: false
+    $default: {
+      request: ['error'],
+      log: ['error']
+    }
   },
   cache: {
     $filter: 'env',
