@@ -12,6 +12,5 @@ module.exports = function (server) {
     if (err) {
       throw err; // something bad happened loading the plugin
     }
-    console.log('plugins callback');
   });
 };

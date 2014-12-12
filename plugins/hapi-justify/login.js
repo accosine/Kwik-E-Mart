@@ -1,4 +1,14 @@
 module.exports = function (request, reply) {
+  var uuid = 1;       // Use seq instead of proper unique identifiers for demo only
+
+  var users = {
+    john: {
+      id: 'john',
+      password: 'password',
+      name: 'John Doe',
+      color: 'red'
+    }
+  };
   if (request.auth.isAuthenticated) {
     return reply.redirect('/');
   }
@@ -22,6 +32,13 @@ module.exports = function (request, reply) {
     return reply.view('login', {message: message});
   }
 
-  request.auth.session.set(account);
-  reply.redirect('/');
+    var sid = String(++uuid);
+    request.server.app.cache.set(sid, { account: account }, 0, function (err) {
+      if (err) {
+          reply(err);
+      }
+
+      request.auth.session.set({ sid: sid });
+      return reply.redirect('/');
+    });
 };
