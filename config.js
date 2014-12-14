@@ -43,6 +43,24 @@ store = new Confidence.Store({
     production: 'couch_production',
     staging: 'couch_staging',
     development: 'couch_development'
+  },
+  plugins: {
+    $filter: 'env',
+    production: {},
+    $default: {
+      justify: {
+        auth: {
+          password: 'secret',
+          cookie: 'sid-example',
+          redirectTo: '/login',
+          isSecure: false
+        },
+        cache: {
+          segment: 'sessions',
+          expiresIn: 24 * 60 * 60 * 1000
+        }
+      }
+    }
   }
 });
 
