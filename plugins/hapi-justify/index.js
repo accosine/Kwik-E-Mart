@@ -2,6 +2,7 @@ var hoek = require('hoek');
 
 exports.register = function (server, options, next) {
   server.dependency('hapi-auth-cookie', function (server, next) {
+    options.test = "ich bi ntest";
     var cache = server.cache(options.cache);
     hoek.merge(options.auth, {
       validateFunc: function (session, callback) {

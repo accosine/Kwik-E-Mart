@@ -1,44 +1,49 @@
-module.exports = function (request, reply) {
-  var uuid = 1;       // Use seq instead of proper unique identifiers for demo only
+var couchreq = require('request');
 
-  var users = {
-    john: {
-      id: 'john',
-      password: 'password',
-      name: 'John Doe',
-      color: 'red'
-    }
-  };
+module.exports = function (request, reply) {
   if (request.auth.isAuthenticated) {
     return reply.redirect('/');
   }
-
   var message = '';
-  var account = null;
 
   if (request.method === 'post') {
     if (!request.payload.username || !request.payload.password) {
       message = 'Missing username or password';
+      return reply.view('login', {message: message});
     }
     else {
-      account = users[request.payload.username];
-      if (!account || account.password !== request.payload.password) {
-        message = 'Invalid username or password';
-      }
+      couchreq({
+        url: 'http://127.0.0.1:5984/kwik-e-mart/admin-' +
+          request.payload.username,
+        json: true
+      }, function (error, response, credentials) {
+        if (!error && response.statusCode == 200 &&
+            credentials.password !== request.payload.password) {
+          message = 'Invalid username or password';
+          return reply.view('login', {message: message});
+        }
+        else if (!error && response.statusCode == 200 &&
+            credentials.password === request.payload.password) {
+          request.server.app.cache.set(credentials._rev,
+              { account: credentials }, 0, function (err) {
+            if (err) {
+              reply(err);
+            }
+
+            request.auth.session.set({ sid: credentials._rev });
+            return reply.redirect('/');
+          });
+        }
+        else {
+          message = 'Invalid username or password';
+          return reply.view('login', {message: message});
+        }
+      });
     }
   }
 
-  if (request.method === 'get' || message) {
-    return reply.view('login', {message: message});
+  if (request.method === 'get') {
+    return reply.view('login');
   }
 
-    var sid = String(++uuid);
-    request.server.app.cache.set(sid, { account: account }, 0, function (err) {
-      if (err) {
-          reply(err);
-      }
-
-      request.auth.session.set({ sid: sid });
-      return reply.redirect('/');
-    });
 };

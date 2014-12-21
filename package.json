@@ -4,7 +4,8 @@
   "description": "e-commerce based on hapi.js",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/lab/bin/lab -c -v -L -l"
+    "test": "./node_modules/lab/bin/lab -c -v -L -l",
+    "setup": "curl -X PUT http://127.0.0.1:5984/kwik-e-mart && curl -i -X PUT http://127.0.0.1:5984/kwik-e-mart/admin-root -d '{\"password\": \"asdf\", \"role\": \"admin\"}'"
   },
   "repository": {
     "type": "git",
