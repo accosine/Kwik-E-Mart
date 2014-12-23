@@ -58,7 +58,11 @@ store = new Confidence.Store({
         cache: {
           segment: 'sessions',
           expiresIn: 24 * 60 * 60 * 1000
-        }
+        },
+        host: '127.0.0.1:5984',
+        database: 'kwik-e-mart',
+        adminprefix: 'admin-',
+        redirectOnSuccess: '/'
       }
     }
   }
