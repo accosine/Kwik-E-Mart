@@ -23,14 +23,6 @@ exports.register = function (server, options, next) {
 
     server.route([
       {
-        method: 'GET',
-        path: '/',
-        config: {
-          handler: require('./home'),
-          auth: 'session'
-        }
-      },
-      {
         method: ['GET', 'POST'],
         path: '/login',
         config: {

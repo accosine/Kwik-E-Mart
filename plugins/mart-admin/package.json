@@ -1,0 +1,7 @@
+{
+  "name": "mart-admin",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "hapi-justify": "0.0.1"
+  }
+}

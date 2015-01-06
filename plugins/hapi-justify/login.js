@@ -15,7 +15,7 @@ module.exports = function (request, reply) {
       if (!error && response.statusCode == 200 &&
           credentials.password !== request.payload.password) {
         message = 'Invalid username or password';
-      return reply.view('login', {message: message});
+      return reply.view('login', {message: message, title: 'login page'});
       }
       // If Couch response is 200 and passwords match, authenticate
       else if (!error && response.statusCode == 200 &&
@@ -35,7 +35,7 @@ module.exports = function (request, reply) {
       // Something is rotten in the state of Denmark
       else {
         message = 'Invalid username or password';
-        return reply.view('login', {message: message});
+        return reply.view('login', {message: message, title: 'login page'});
       }
     });
   }
@@ -49,7 +49,7 @@ module.exports = function (request, reply) {
     // If either username or password are missing, reply with error message
     if (!request.payload.username || !request.payload.password) {
       message = 'Missing username or password';
-      return reply.view('login', {message: message});
+      return reply.view('login', {message: message, title: 'login page'});
     }
     // Ask CouchDB for admin credential data
     else {
@@ -58,7 +58,7 @@ module.exports = function (request, reply) {
   }
 
   if (request.method === 'get') {
-    return reply.view('login');
+    return reply.view('login', {title: 'login page'});
   }
 
 };

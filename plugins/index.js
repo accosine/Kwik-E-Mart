@@ -7,6 +7,9 @@ var plugins = [
   {
     register: require('./hapi-justify'),
     options: options.justify
+  },
+  {
+    register: require('./mart-admin')
   }
 ];
 
