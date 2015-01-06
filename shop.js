@@ -17,6 +17,5 @@ if (!module.parent) {
     console.log('Server started at: ' + server.info.uri);
   });
 }
-
 module.exports.server = server;
 
