@@ -1,26 +1,33 @@
 var couchreq = require('request')
-  , path = require('path');
+  , path = require('path')
+  , crypto = require('crypto');
 
 module.exports = function (request, reply) {
   var that = this
   , message = ''
-  , url = 'http://' + path.join(this.host, this.database, this.adminprefix);
+  , couchurl = 'http://' + path.join(this.host, this.database, this.adminprefix);
+
 
   function fetchAndMatchCredentials(request, reply) {
     couchreq({
-      url: url + request.payload.username,
+      url: couchurl + request.payload.username,
       json: true
     }, function (error, response, credentials) { // Callback after Couch resp.
       // If Couch response is 200 and passwords don't match, reply with error
+      var hash = crypto.createHmac('sha256', credentials.salt)
+                       .update(request.payload.password)
+                       .digest('hex');
+
       if (!error && response.statusCode == 200 &&
-          credentials.password !== request.payload.password) {
+          credentials.password !== hash) {
         message = 'Invalid username or password';
       return reply.view('login', {message: message, title: 'login page'});
       }
       // If Couch response is 200 and passwords match, authenticate
       else if (!error && response.statusCode == 200 &&
-               credentials.password === request.payload.password) {
-        // Cache session in redis, '0' ttl loads global configuration
+               credentials.password === hash) {
+        // Cache session in redis, '0' ttl loads global configuration (use _rev
+        // from CouchDB because it's convenient)
         request.server.app.cache.set(credentials._rev, {account: credentials}, 0,
             function (err) {
           if (err) {
