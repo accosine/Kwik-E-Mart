@@ -27,6 +27,9 @@ exports.register = function (server, options, next) {
         path: '/login',
         config: {
           handler: require('./login'),
+          payload: {
+            maxBytes: 1024
+          },
           bind: options,
           auth: {
             mode: 'try',
