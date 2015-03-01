@@ -1,49 +1,40 @@
-var couchreq = require('request')
-  , path = require('path')
+var path = require('path')
   , crypto = require('crypto');
 
 module.exports = function (request, reply) {
   var that = this
   , message = ''
-  , couchurl = 'http://' + path.join(this.host, this.database, this.adminprefix);
-
+  , cookies;
 
   function fetchAndMatchCredentials(request, reply) {
-    couchreq({
-      url: couchurl + request.payload.username,
-      json: true
-    }, function (error, response, credentials) { // Callback after Couch resp.
-      // If Couch response is 200 and passwords don't match, reply with error
-      var hash = crypto.createHmac('sha256', credentials.salt)
-                       .update(request.payload.password)
-                       .digest('hex');
-
-      if (!error && response.statusCode == 200 &&
-          credentials.password !== hash) {
+    request.server.methods.couch.get(that.adminprefix + request.payload.username,
+        function(err, credentials) {
+      // If username does not exist
+      if (err && err.reason === 'missing') {
+        console.log(err);
         message = 'Invalid username or password';
-      return reply.view('login', {message: message, title: 'login page'});
       }
-      // If Couch response is 200 and passwords match, authenticate
-      else if (!error && response.statusCode == 200 &&
-               credentials.password === hash) {
-        // Cache session in redis, '0' ttl loads global configuration (use _rev
-        // from CouchDB because it's convenient)
-        request.server.app.cache.set(credentials._rev, {account: credentials}, 0,
-            function (err) {
-          if (err) {
-            reply(err);
-          }
+        // Something is rotten in the state of Denmark
+      else if (err) {
+        console.log(err);
+      }
+      else {
+        // If couch responds with the credentials
+        var hash = crypto.createHmac('sha256', credentials.salt)
+                         .update(request.payload.password)
+                         .digest('hex');
 
+        // If the hashed password does not match the hash in couch
+        if (credentials.password !== hash) {
+          message = 'Invalid username or password';
+        }
+        // If the passwords match, authenticate
+        else if (credentials.password === hash) {
           request.auth.session.set({ sid: credentials._rev });
           return reply.redirect(that.redirectOnSuccess);
-        });
+        }
       }
-
-      // Something is rotten in the state of Denmark
-      else {
-        message = 'Invalid username or password';
-        return reply.view('login', {message: message, title: 'login page'});
-      }
+      return reply.view('login', {message: message, title: 'login page'});
     });
   }
 

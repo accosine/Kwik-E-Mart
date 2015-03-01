@@ -1,24 +1,7 @@
 var hoek = require('hoek');
 
 exports.register = function (server, options, next) {
-  server.dependency('hapi-auth-cookie', function (server, next) {
-    var cache = server.cache(options.cache);
-
-    hoek.merge(options.auth, {
-      validateFunc: function (session, callback) {
-        cache.get(session.sid, function (err, cached) {
-          if (err) {
-            return callback(err, false);
-          }
-          if (!cached) {
-            return callback(null, false);
-          }
-          return callback(null, true, cached.account);
-        });
-      }
-    });
-
-    server.app.cache = cache;
+  server.dependency(['hapi-auth-cookie', 'hapi-relax'], function (server, next) {
     server.auth.strategy('session', 'cookie', options.auth);
 
     server.route([
