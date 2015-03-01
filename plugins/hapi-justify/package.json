@@ -1,7 +1,7 @@
 {
   "name": "hapi-justify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
-    "request": "^2.51.0"
+    "hapi-relax": "^0.0.1"
   }
 }

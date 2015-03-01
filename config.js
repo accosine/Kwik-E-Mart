@@ -39,30 +39,31 @@ store = new Confidence.Store({
     }
   },
   database: {
-    $filter: 'env',
-    production: 'couch_production',
-    staging: 'couch_staging',
-    development: 'couch_development'
+    host: '127.0.0.1:5984',
+    database: 'kwik-e-mart',
+    adminprefix: 'admin-'
   },
   plugins: {
     $filter: 'env',
     production: {},
     $default: {
       justify: {
+        adminprefix: 'admin-',
         auth: {
           password: 'secret',
           cookie: 'sid-example',
           redirectTo: '/login',
           isSecure: false
         },
-        cache: {
-          segment: 'sessions',
-          expiresIn: 24 * 60 * 60 * 1000
-        },
-        host: '127.0.0.1:5984',
-        database: 'kwik-e-mart',
-        adminprefix: 'admin-',
         redirectOnSuccess: '/'
+      },
+      relax: {
+        nano : {
+          db: 'kwik-e-mart'
+        },
+        user: 'root',
+        password: 'asdf',
+        prefix: 'couch'
       }
     }
   }

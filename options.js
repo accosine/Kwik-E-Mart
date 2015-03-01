@@ -10,7 +10,8 @@ module.exports.connection = {
 };
 
 module.exports.plugins = {
-  justify: config.get('/plugins/justify')
+  justify: config.get('/plugins/justify'),
+  relax: config.get('/plugins/relax')
 };
 
 module.exports.views = {

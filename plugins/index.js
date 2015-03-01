@@ -2,6 +2,10 @@ var options = require('../options').plugins;
 
 var plugins = [
   {
+    register: require('hapi-relax'),
+    options: options.relax
+  },
+  {
     register: require('hapi-auth-cookie')
   },
   {
