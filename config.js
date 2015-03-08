@@ -55,7 +55,7 @@ store = new Confidence.Store({
           redirectTo: '/login',
           isSecure: false
         },
-        redirectOnSuccess: '/'
+        redirectOnSuccess: '/admin'
       },
       relax: {
         nano : {
