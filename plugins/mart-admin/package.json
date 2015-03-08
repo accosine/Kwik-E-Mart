@@ -3,5 +3,18 @@
   "version": "0.0.1",
   "peerDependencies": {
     "hapi-justify": "0.0.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot --progress --colors",
+    "build": "webpack --progress --colors"
+  },
+  "devDependencies": {
+    "babel-core": "^4.7.3",
+    "babel-loader": "^4.1.0",
+    "react": "^0.12.2",
+    "react-hot-loader": "^1.1.7",
+    "react-router": "^0.12.4",
+    "webpack": "^1.7.2",
+    "webpack-dev-server": "^1.7.0"
   }
 }

@@ -4,9 +4,14 @@ exports.register = function (server, options, next) {
     server.route([
       {
         method: 'GET',
-        path: '/{admin*}',
+        path: '/admin/{param*}',
         config: {
-          handler: function (request, reply) { reply('Hello, world!'); },
+          handler: {
+            directory: {
+              path: __dirname + '/www',
+              index: true
+            }
+          },
           auth: 'session'
         }
       },
