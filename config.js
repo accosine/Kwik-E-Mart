@@ -55,6 +55,8 @@ store = new Confidence.Store({
           redirectTo: '/login',
           isSecure: false
         },
+        cacheExpiration: 3 * 24 * 60 * 60 * 1000,
+        cacheSegment: 'sessions',
         redirectOnSuccess: '/admin'
       },
       relax: {

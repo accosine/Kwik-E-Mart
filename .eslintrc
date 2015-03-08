@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "quotes": [2, "single", "avoid-escape"],
+    "strict": 0,
+    "no-unused-vars": 0,
+    "no-undef": 0,
+    "no-underscore-dangle": 0,
+    "react/prop-types": 2
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true
+  },
+}
