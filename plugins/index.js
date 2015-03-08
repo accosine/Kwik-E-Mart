@@ -6,9 +6,6 @@ var plugins = [
     options: options.relax
   },
   {
-    register: require('hapi-auth-cookie')
-  },
-  {
     register: require('./hapi-justify'),
     options: options.justify
   },

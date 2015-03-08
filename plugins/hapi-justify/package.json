@@ -1,7 +1,8 @@
 {
   "name": "hapi-justify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
+    "hapi-auth-cookie": "^2.0.0",
     "hapi-relax": "^0.0.1"
   }
 }
