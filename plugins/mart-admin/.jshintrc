@@ -1,7 +1,0 @@
-{
-  "node": true
-  , "laxcomma": false
-  , "validthis": true
-  , "esnext": true
-}
-

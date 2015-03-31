@@ -1,5 +1,6 @@
 var path = require('path')
-  , crypto = require('crypto');
+  , crypto = require('crypto')
+  , uuid = require('node-uuid').v4;
 
 module.exports = function (request, reply) {
   var that = this
@@ -7,12 +8,14 @@ module.exports = function (request, reply) {
   , cookies;
 
   function fetchAndMatchCredentials(request, reply) {
+
     request.server.methods.couch.get(that.adminprefix + request.payload.username,
         function(err, credentials) {
       // If username does not exist
       if (err && err.reason === 'missing') {
         console.log(err);
         message = 'Invalid username or password';
+        return reply.view('login', {message: message, title: 'login page'});
       }
         // Something is rotten in the state of Denmark
       else if (err) {
@@ -27,14 +30,24 @@ module.exports = function (request, reply) {
         // If the hashed password does not match the hash in couch
         if (credentials.password !== hash) {
           message = 'Invalid username or password';
+          return reply.view('login', {message: message, title: 'login page'});
         }
         // If the passwords match, authenticate
         else if (credentials.password === hash) {
-          request.auth.session.set({ sid: credentials._rev });
-          return reply.redirect(that.redirectOnSuccess);
+          var sid = uuid();
+          request.server.app.cache.set(sid, { account: request.payload.username }, 0, function (err) {
+
+            if (err) {
+              reply(err);
+            }
+
+            request.auth.session.set({ sid: sid });
+            return reply.redirect(that.redirectOnSuccess);
+          });
+          //request.auth.session.set({ sid: credentials._rev });
+          //return reply.redirect(that.redirectOnSuccess);
         }
       }
-      return reply.view('login', {message: message, title: 'login page'});
     });
   }
 

@@ -8,7 +8,7 @@ exports.register = function (server, options, next) {
         config: {
           handler: {
             directory: {
-              path: __dirname + '/www',
+              path: __dirname + '/build',
               index: true
             }
           },
