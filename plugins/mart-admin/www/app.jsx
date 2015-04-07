@@ -6,5 +6,5 @@ import App from './components/App/App';
 
 React.render(
   <App />,
-  document.getElementById('app')
+  document.getElementById('backend')
 );

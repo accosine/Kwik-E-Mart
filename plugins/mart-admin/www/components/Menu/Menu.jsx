@@ -8,20 +8,16 @@ class Menu extends React.Component {
   render() {
     return (
       <ul className={'menu'}>
-        {this.props.items.map((item) => {
-          return (
-            <MenuItem
-              item={item}
-              key={'menu-item-' + item.id} />
-          );
-        })}
+        <MenuItem navitem='Create' navclass='menu-item-create' />
+        <MenuItem navitem='Update' navclass='menu-item-update' />
+        <MenuItem navitem='Delete' navclass='menu-item-delete' />
       </ul>
     );
   }
 }
 
 Menu.propTypes = {
-  items: PropTypes.array.isRequired
+  //items: PropTypes.array.isRequired
 };
 
 export default Menu;

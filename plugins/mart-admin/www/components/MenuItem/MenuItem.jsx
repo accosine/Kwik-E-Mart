@@ -1,5 +1,4 @@
 import React from 'react';
-import classnames from 'classnames';
 import AppActions from '../../actions/AppActions';
 
 let { PropTypes } = React;
@@ -15,9 +14,7 @@ class MenuItem extends React.Component {
 
   handleClick() {
     this.toggleSelected();
-    AppActions[
-      this.isSelected() ? 'deSelectItem' : 'selectItem'
-    ](this.props.item);
+    AppActions.clickNavItem(this.props.navitem);
   }
 
   toggleSelected() {
@@ -27,27 +24,21 @@ class MenuItem extends React.Component {
   }
 
   isSelected() {
-    return this.state.isSelected;
-  }
-
-  getClassName() {
-    return classnames({
-      'menu-item': true,
-      '-selected': this.isSelected()
-    });
+    return this.state.isSelected ? ' selected' : '';
   }
 
   render() {
     return (
-      <li className={this.getClassName()} onClick={this.handleClick.bind(this)}>
-        {this.props.item.label}
+      <li className={(this.props.navclass + this.isSelected())} onClick={this.handleClick.bind(this)}>
+        {this.props.navitem}
       </li>
     );
   }
 }
 
 MenuItem.propTypes = {
-  item: PropTypes.object.isRequired
+  navitem: PropTypes.string.isRequired,
+  navclass: PropTypes.string.isRequired
 };
 
 export default MenuItem;
