@@ -1,15 +1,12 @@
-
 import React from 'react';
 import Body from '../Body/Body';
 import Footer from '../Footer/Footer';
-import ItemsStore from '../../stores/ItemsStore';
-import SelectedStore from '../../stores/SelectedStore';
+import ContentFormStore from '../../stores/ContentFormStore' ;
 import AppActions from '../../actions/AppActions';
 
 function getAppState() {
   return {
-    items: ItemsStore.getAll(),
-    selectedItems: SelectedStore.getAll()
+    selectedNavItem: ContentFormStore.get()
   };
 }
 
@@ -21,14 +18,11 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    ItemsStore.addChangeListener(this.onChange.bind(this));
-    SelectedStore.addChangeListener(this.onChange.bind(this));
-    AppActions.getItems();
+    ContentFormStore.addChangeListener(this.onChange.bind(this));
   }
 
   componentWillUnmount() {
-    ItemsStore.removeChangeListener(this.onChange);
-    SelectedStore.removeChangeListener(this.onChange);
+    ContentFormStore.removeChangeListener(this.onChange);
   }
 
   onChange() {
@@ -39,8 +33,7 @@ export default class App extends React.Component {
     return (
       <div className={'app'}>
         <Body
-          items={this.state.items}
-          selectedItems={this.state.selectedItems} />
+          selectedNavItem={this.state.selectedNavItem} />
         <Footer />
       </div>
     );
