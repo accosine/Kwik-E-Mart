@@ -10,6 +10,9 @@ var plugins = [
     options: options.justify
   },
   {
+    register: require('./outlet')
+  },
+  {
     register: require('./mart-admin')
   }
 ];

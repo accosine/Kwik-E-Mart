@@ -1,23 +1,17 @@
 import React from 'react';
-import MenuItem from '../MenuItem/MenuItem';
+import {Link} from 'react-router';
 
-let { PropTypes } = React;
-
-class Menu extends React.Component {
-
+export default class Header extends React.Component {
   render() {
     return (
-      <ul className={'menu'}>
-        <MenuItem navitem='Create' navclass='menu-item-create' />
-        <MenuItem navitem='Update' navclass='menu-item-update' />
-        <MenuItem navitem='Delete' navclass='menu-item-delete' />
-      </ul>
+      <header>
+        <ul>
+          <li><Link to="dashboard">Dashboard</Link></li>
+          <li><Link to="create">Create</Link></li>
+          <li><Link to="update">Update</Link></li>
+          <li><Link to="delete">Delete</Link></li>
+        </ul>
+      </header>
     );
   }
 }
-
-Menu.propTypes = {
-  //items: PropTypes.array.isRequired
-};
-
-export default Menu;
