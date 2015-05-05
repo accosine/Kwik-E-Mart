@@ -26,3 +26,6 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# Look away if Erlang takes a dump
+erl_crash.dump

@@ -1,0 +1,7 @@
+{
+  "_id": "admin-root",
+  "_rev": "3-eb4bba86c9089f53887c5743e8553032",
+  "password": "b60010174364a8a461fa574fc64200839d68a28c6a059905b8aaf14d34697e9c",
+  "role": "admin",
+  "salt": "CFQdbCzBIgtQk8fqcdR4MQ=="
+}
