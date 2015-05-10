@@ -1,0 +1,2028 @@
+{
+  "products": [
+    {
+      "_id": "1A_Steak_Sauce",
+      "title": "1A Steak Sauce",
+      "description": "1A Steak Sauce is a parody of A1 Sauce (formerly A1 Steak Sauce). Homer uses it on his meat...",
+      "price": 0.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/c/c6/1_A_steak_sauce.png/revision/latest"
+    },
+    {
+      "_id": "77X42",
+      "title": "77X42",
+      "description": "The 77X42 (pronounced \"Seven Seven X Four Two\"), also referred to as the Super Sour Ball, is an...",
+      "price": 0.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/9/90/77X42.jpg/revision/latest"
+    },
+    {
+      "_id": "AT-5000_Auto-dialer",
+      "title": "AT-5000 Auto-dialer",
+      "description": "The AT-5000 Auto-dialer was an invention of Professor Frink and was the Professor's first...",
+      "price": 17.99,
+      "categories": [
+        "Electronics"
+      ]
+    },
+    {
+      "_id": "Absolut_Krusty",
+      "title": "Absolut Krusty",
+      "description": "Absolut Krusty is Krusty the Clown's brand of Vodka. When Bart moved to his own apartment, the...",
+      "price": 5.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/b/ba/Absolut_Krusty.png/revision/latest"
+    },
+    {
+      "_id": "Absolut_Pikl",
+      "title": "Absolut Pikl",
+      "description": "Absolut Pikl is a drink from the Absolut franchise with a taste of pickles. It is one of the...",
+      "price": 3.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Almond_Joy",
+      "title": "Almond Joy",
+      "description": "Almond Joy is a type of candy. When Apu Nahasapeemapetilon was suggesting ideas for a food gift...",
+      "price": 5.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/1/1d/Almond_Joy.jpg/revision/latest"
+    },
+    {
+      "_id": "Alphonse",
+      "title": "Alphonse",
+      "description": "Alphonse is Krusty the Clown's ventriloquist doll. Due to its gruesome appearance and poor...",
+      "price": 2.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/c/c8/Alphonse.jpg/revision/latest"
+    },
+    {
+      "_id": "Astrolabe",
+      "title": "Astrolabe",
+      "description": "When Homer gets a baseball card of Joe DiMaggio from Mr. Burns for a Christmas bonus he goes to...",
+      "price": 15.99,
+      "categories": [
+        "Electronics"
+      ]
+    },
+    {
+      "_id": "B-Mail",
+      "title": "B-Mail",
+      "description": "B-Mail (meaning 'B' for brain) is a form of electric mail service that sent message to the brain...",
+      "price": 0.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/e/ee/Bmail.png/revision/latest"
+    },
+    {
+      "_id": "Baby_Burps_A_Lot",
+      "title": "Baby Burps A Lot",
+      "description": "Baby Burps A Lot is a doll owned by Lisa. Lisa and Janey Powell were playing with the doll and a...",
+      "price": 6.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/a/ae/Baby_burps_a_lot.jpg/revision/latest"
+    },
+    {
+      "_id": "Battle_Balls",
+      "title": "Battle Balls",
+      "description": "Battle Balls is a parody of Bakugan, a kids TV show and strategy game involving balls and cards...",
+      "price": 7.99,
+      "categories": [
+        "Toys"
+      ]
+    },
+    {
+      "_id": "Battleboat",
+      "title": "Battleboat",
+      "description": "Battleboat is a board game. It is the game for ages 8 to adult. It is one of many board games...",
+      "price": 22.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/5/58/Battleboat.png/revision/latest"
+    },
+    {
+      "_id": "Bedtime_Krusty",
+      "title": "Bedtime Krusty",
+      "description": "Bedtime Krusty is a variant of the Krusty Doll which was designed for bedtime. It is dressed in...",
+      "price": 4.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ]
+    },
+    {
+      "_id": "Belfast_Charms",
+      "title": "Belfast Charms",
+      "description": "Belfast Charms is a brand of cereal, a parody of real life cereal Lucky Charms. Lisa eats the...",
+      "price": 13.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/f/f2/Belfastcharms.png/revision/latest"
+    },
+    {
+      "_id": "Billy_Beer",
+      "title": "Billy Beer",
+      "description": "Billy Beer is a type of beer that once Homer found in his jacket. It was named after and...",
+      "price": 23.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Billy_Graham%27s_Bible_Blaster",
+      "title": "Billy Graham's Bible Blaster",
+      "description": "Billy Graham's Bible Blaster is a religious video game Rod and Todd Flanders play, it cheered...",
+      "price": 0.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/9/94/BibleBlaster.jpg/revision/latest"
+    },
+    {
+      "_id": "Binge_and_Purr",
+      "title": "Binge and Purr",
+      "description": "Binge and Purr is a cat food. Lisa fed Snowball V the cat food because it is low-fat. However...",
+      "price": 12.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/0/00/Binge_and_Purr.jpg/revision/latest"
+    },
+    {
+      "_id": "Binky",
+      "title": "Binky",
+      "description": "Binky is the main character off of Life in Hell. He appears on a frame in The Pacifier and as a...",
+      "price": 23.99,
+      "categories": [
+        "Toys"
+      ]
+    },
+    {
+      "_id": "Category:Blocko",
+      "title": "Blocko",
+      "description": "Articles related to Blocko.",
+      "price": 6.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/4/47/Blockoland.png/revision/latest"
+    },
+    {
+      "_id": "Blocko_Angelica_Button",
+      "title": "Blocko Angelica Button",
+      "description": "Blocko Angelica Button is a video game whose poster appears at the E4 Convention. It is a Blocko...",
+      "price": 12.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/9/99/Blocko_Angelica_Button.png/revision/latest"
+    },
+    {
+      "_id": "Blocko_Cosmic_Wars",
+      "title": "Blocko Cosmic Wars",
+      "description": "Blocko Cosmic Wars is a toy that was presented at the E4 Convention in \"The Food Wife\". It is a...",
+      "price": 26.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/9/96/Blocko_Wars.png/revision/latest"
+    },
+    {
+      "_id": "Blocko_Earthland_Realms",
+      "title": "Blocko Earthland Realms",
+      "description": "Blocko Earthland Realms is one set of Blocko, focusing on the Earthland Realms games. The sets...",
+      "price": 11.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/5/53/Earthland_Realms.png/revision/latest"
+    },
+    {
+      "_id": "Blocko_Space_Adventure",
+      "title": "Blocko Space Adventure",
+      "description": "Blocko Space Adventure is one set of Blocko. The sets were seen at the Blocko Store.",
+      "price": 3.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/8/8a/Space_adventures.png/revision/latest"
+    },
+    {
+      "_id": "Blue_Bronco_Energy_Drink",
+      "title": "Blue Bronco Energy Drink",
+      "description": "Blue Bronco Energy Drink, is an energy drink. It is drunk regularly by Zachary Vaughn, although...",
+      "price": 14.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "File:Blue-Bronco.png",
+      "title": "Blue-Bronco.png",
+      "description": "",
+      "price": 18.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/b/b0/Blue-Bronco.png/revision/latest"
+    },
+    {
+      "_id": "Category:Board_Games",
+      "title": "Board Games",
+      "description": "All The Simpsons board games and the board games that appeared in the show.",
+      "price": 8.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/7/77/Good_Samaritan.jpg/revision/latest"
+    },
+    {
+      "_id": "Bobo",
+      "title": "Bobo",
+      "description": "Bobo is Mr. Burns's beloved teddy bear. Bobo was once in the Antarctic Area and in the...",
+      "price": 26.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/6/67/Maggiebobobear.gif/revision/latest"
+    },
+    {
+      "_id": "Bonk_It!",
+      "title": "Bonk It!",
+      "description": "Bonk It! is a toy Bart and Lisa play on the car trip scene from \"Rednecks and Broomsticks\". It...",
+      "price": 26.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/a/af/Bonk_it.jpg/revision/latest"
+    },
+    {
+      "_id": "Butterfinger",
+      "title": "Butterfinger",
+      "description": "Butterfinger is a popular peanut-butter and chocolate candy bar. There have been 150 commercials...",
+      "price": 24.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/4/46/Butterfinger.jpg/revision/latest"
+    },
+    {
+      "_id": "Butterfinger_BB%27s",
+      "title": "Butterfinger BB's",
+      "description": "Butterfinger BBs are little round pieces of Butterfinger. They are a type of food. [A screen...",
+      "price": 7.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/b/bb/Butterfingersayings.jpg/revision/latest"
+    },
+    {
+      "_id": "Buzz_Cola",
+      "title": "Buzz Cola",
+      "description": "The Buzz Cola Energy Drink is a popular cola drink in Springfield. There are several different...",
+      "price": 19.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/e/e3/Buzz_cola.png/revision/latest"
+    },
+    {
+      "_id": "Category:Candy",
+      "title": "Candy",
+      "description": "Various types of candy that appear in the show.",
+      "price": 14.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/4/46/Butterfinger.jpg/revision/latest"
+    },
+    {
+      "_id": "Cap%27n_Crunch%27s_cereals",
+      "title": "Cap'n Crunch's cereals",
+      "description": "Cap'n Crunch's cereals are cereals. Its mascot is Cap'n Crunch. When Kirk and Luann Van Houten...",
+      "price": 8.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Caramel_Cod",
+      "title": "Caramel Cod",
+      "description": "The Caramel Cod is cod fish on a stick covered in caramel. Episode – \"Treehouse of Horror VIII\"",
+      "price": 3.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/3/36/CaraCod.png/revision/latest"
+    },
+    {
+      "_id": "Catsup",
+      "title": "Catsup",
+      "description": " “Ketchup? Catsup?” ―Mr. Burns about getting ketchup or catsup.[src] Mr. Burns was thinking to...",
+      "price": 28.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/b/b1/Ketchup_or_Catsup.jpg/revision/latest"
+    },
+    {
+      "_id": "Celtic_Charms",
+      "title": "Celtic Charms",
+      "description": "Celtic Charms is a cereal based on Lucky Charms cereal. Bart says \"Oh, if I'm gonna get through...",
+      "price": 6.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/0/0a/Bart%27s_New_Friend_-00111.jpg/revision/latest"
+    },
+    {
+      "_id": "Charleston_Chew",
+      "title": "Charleston Chew",
+      "description": "Charleston Chew is a type of candy. When Bart was suggesting ideas for a food gift for Juliet...",
+      "price": 17.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/c/c2/Charleston_Chew.jpg/revision/latest"
+    },
+    {
+      "_id": "Cheaty",
+      "title": "Cheaty",
+      "description": "Cheaty (AKA Terrible Two) was Homer's duck in the rubber duck race. He is yellow with a number 2...",
+      "price": 22.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/2/24/Cheaty.jpg/revision/latest"
+    },
+    {
+      "_id": "Chicken_of_the_Sea_Tuna",
+      "title": "Chicken of the Sea Tuna",
+      "description": "Chicken of the Sea Tuna is a tuna in the can. When Kirk and Luann Van Houten got lost in the...",
+      "price": 22.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Chintzy_Pop",
+      "title": "Chintzy Pop",
+      "description": "The Chintzy Pop is a legal, yet vastly inferior brand of popcorn. Many of the kernels in the...",
+      "price": 12.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/9/95/Pop.jpg/revision/latest"
+    },
+    {
+      "_id": "Chipples",
+      "title": "Chipples",
+      "description": "Chipples are a potato chip product. Busman buys a packet of Chipples at The Trading Post in...",
+      "price": 13.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Chippos",
+      "title": "Chippos",
+      "description": "Chippos are a brand of potato chips with a hippopotamus mascot that appear in several episodes...",
+      "price": 28.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/e/eb/Chippos.png/revision/latest"
+    },
+    {
+      "_id": "Chocolate_rabbits",
+      "title": "Chocolate rabbits",
+      "description": "The Chocolate Rabbits appear in The Simpsons Game on the first level. They attack you at the...",
+      "price": 3.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/c/c9/Rabbits.png/revision/latest"
+    },
+    {
+      "_id": "Chubba_the_Shedd%27s_Dust_Palace",
+      "title": "Chubba the Shedd's Dust Palace",
+      "description": "Chubba the Shedd's Dust Palace was one set of Blocko Cosmic Wars that was sold at the Blocko...",
+      "price": 9.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/9/96/Blocko_Wars.png/revision/latest"
+    },
+    {
+      "_id": "Chucky",
+      "title": "Chucky",
+      "description": "Chucky is a character from the Child's Play series of movies. Chucky is one of the many people...",
+      "price": 25.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/3/31/Chucky.png/revision/latest"
+    },
+    {
+      "_id": "Chunky_Farms_Tail_%26_Tendon_Soup",
+      "title": "Chunky Farms Tail & Tendon Soup",
+      "description": "Chunky Farms Tail & Tendon Soup is a soup Homer eats. Episode – \"Whiskey Business\"",
+      "price": 10.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/e/e3/Chunky_Farms_Tail_%26_Tendon_Soup.jpg/revision/latest"
+    },
+    {
+      "_id": "Consternation",
+      "title": "Consternation",
+      "description": "Consternation is a board game. It is one of many board games the Simpson family owns.",
+      "price": 27.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/d/dd/Consternation.png/revision/latest"
+    },
+    {
+      "_id": "Cookie_Colossus",
+      "title": "Cookie Colossus",
+      "description": "Cookie Colossus is a shop in the Springfield Mall that sells cookies. Homer walks past Cookie...",
+      "price": 1.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Cop_Killaz",
+      "title": "Cop Killaz",
+      "description": "Cop Killaz is a candy which was available in the Scammer and Z-Dog vending machines at...",
+      "price": 2.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Count_Fudge-ula",
+      "title": "Count Fudge-ula",
+      "description": "Count Fudge-ula is a breakfast cereal mascot from a cereal with the same name. He is not to be...",
+      "price": 28.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/3/3a/Count_Fudge-ula.png/revision/latest"
+    },
+    {
+      "_id": "Crate_of_Apes",
+      "title": "Crate of Apes",
+      "description": "Crate of Apes is a board game. It is one of many board games the Simpson family owns.",
+      "price": 25.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/a/ad/Crate_of_Apes.png/revision/latest"
+    },
+    {
+      "_id": "Crazy_E.T.%27s_Phone_Home",
+      "title": "Crazy E.T.'s Phone Home",
+      "description": "Crazy E.T.'s Phone Home is a cellphone shop at the Springfield Mall. The store's name is a pun...",
+      "price": 15.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/2/20/Crazy_e.t.%27s_phone_home.png/revision/latest"
+    },
+    {
+      "_id": "Cup_O%27_Nothing",
+      "title": "Cup O' Nothing",
+      "description": "Cup O' Nothing is a flavorless soup Lisa eats. It is a parody of Cup-a-Soup. Episode – \"Whiskey...",
+      "price": 28.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Dead_Eye_B.B._Gun",
+      "title": "Dead Eye B.B. Gun",
+      "description": "Dead Eye B.B. Gun is a gun that Bart owns. When Milhouse asked Bart if he wants to come over...",
+      "price": 17.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/3/30/Dead_Eye_B.B._Gun.png/revision/latest"
+    },
+    {
+      "_id": "Desperation_by_Krusty",
+      "title": "Desperation by Krusty",
+      "description": "Desperation by Krusty is a perfume that is part of merchandise Krusty endorses and sells. There...",
+      "price": 10.99,
+      "categories": [
+        "Grooming Products"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/5/56/Desperation_by_Krusty00001.png/revision/latest"
+    },
+    {
+      "_id": "Diet_Mr._Pibb",
+      "title": "Diet Mr. Pibb",
+      "description": "Diet Mr. Pibb is the drink that was spilled on the stack of \"Water Damaged Little Lulu\" comics...",
+      "price": 28.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Dimoxinil",
+      "title": "Dimoxinil",
+      "description": "Dimoxinil is a type of hair growth medicine. Dimoxinil is very effective (restoring hair down to...",
+      "price": 20.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/f/f4/Dimoxinil.png/revision/latest"
+    },
+    {
+      "_id": "Dino_Sponges",
+      "title": "Dino Sponges",
+      "description": "Dino Sponges is a sponge dinosaur. Bart bought this toy for five dollars and tried to play a...",
+      "price": 2.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/2/2d/Dino_Spongers.jpg/revision/latest"
+    },
+    {
+      "_id": "Donuts",
+      "title": "Donuts",
+      "description": "Donuts are a circular pastry usually containing large amounts of fat. They are most notably...",
+      "price": 4.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/6/64/212px-Homer_Simpson_2006.png/revision/latest"
+    },
+    {
+      "_id": "Dr._Hippie%27s_Fungus_Yums",
+      "title": "Dr. Hippie's Fungus Yums",
+      "description": "Dr. Hippie's Fungus Yums is a protein supplement that comes in a pill form. When Lisa tried to...",
+      "price": 5.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/6/6f/Fungus_Yums.jpg/revision/latest"
+    },
+    {
+      "_id": "Dracco_Heads",
+      "title": "Dracco Heads",
+      "description": "Dracco Heads are a series of small plastic toys made by the Dracco company released only in...",
+      "price": 5.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/2/23/DraccoCrazyBones.png/revision/latest"
+    },
+    {
+      "_id": "Dragon%27s_Eye",
+      "title": "Dragon's Eye",
+      "description": "Dragon's Eye is a marble used by Martin Prince while playing with other kids. Martin and other...",
+      "price": 3.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/1/18/Dragon%27s_Eye.jpg/revision/latest"
+    },
+    {
+      "_id": "Drops_and_Risers",
+      "title": "Drops and Risers",
+      "description": "Drops and Risers is a board game. It is one of many board games the Simpson family owns.",
+      "price": 5.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/6/68/Drops_and_Risers.png/revision/latest"
+    },
+    {
+      "_id": "Category:Duff_Beer",
+      "title": "Duff Beer",
+      "description": "Articles related to Duff Beer.",
+      "price": 22.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/5/54/Moe%27s_Tavern_Tapped_Out.png/revision/latest"
+    },
+    {
+      "_id": "Duff_Champagne",
+      "title": "Duff Champagne",
+      "description": "Duff Champagne (featured in Eternal Moonshine of the Simpson Mind) is a brand of cheap sparking...",
+      "price": 0.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Edna%27s_Edibles",
+      "title": "Edna's Edibles",
+      "description": "Edna's Edibles was a shop opened by Edna Krabappel after she was fired from Springfield...",
+      "price": 17.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/4/40/Edna%27s_Edibles.png/revision/latest"
+    },
+    {
+      "_id": "El_Chemistri",
+      "title": "El Chemistri",
+      "description": "El Chemistri is the most exclusive restaurant in Springfield. Marge, Bart, and Lisa visit it...",
+      "price": 12.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/a/a9/West_oak_chemistri.jpg/revision/latest"
+    },
+    {
+      "_id": "Elmo",
+      "title": "Elmo",
+      "description": "Elmo is a red Muppet from the popular PBS children's television show, Sesame Street. He made his...",
+      "price": 1.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/4/43/Elmo.png/revision/latest"
+    },
+    {
+      "_id": "Emissaries_to_Byzantium",
+      "title": "Emissaries to Byzantium",
+      "description": "Emissaries to Byzantium is a board game the Simpson family owns. While the storm was outside...",
+      "price": 16.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/0/0e/Emissaries_to_Byzantium.png/revision/latest"
+    },
+    {
+      "_id": "Extra_Fancy_Potato_Chips",
+      "title": "Extra Fancy Potato Chips",
+      "description": "Extra Fancy Potato Chips is either a flavour or company of potato chips. During Burns' Heir...",
+      "price": 11.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/f/f3/Extra_Fancy_Potato_Chips.png/revision/latest"
+    },
+    {
+      "_id": "Farmer_Billy%27s_Bacon",
+      "title": "Farmer Billy's Bacon",
+      "description": "Farmer Billy's Bacon is a bacon by Farmer Billy. Homer saw a commercial about a contest that...",
+      "price": 18.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Flaming_Homer",
+      "title": "Flaming Homer",
+      "description": "The Flaming Homer, also known as the Flaming Moe, is a cocktail drink, accidentally invented by...",
+      "price": 28.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/f/f9/Flaminghomer.jpg/revision/latest"
+    },
+    {
+      "_id": "Forget-Me-Shot",
+      "title": "Forget-Me-Shot",
+      "description": "The Forget-Me-Shot is a drink served by Moe at Moe's Tavern. It wipes out the drinker's memory...",
+      "price": 14.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/9/95/Forget_me_shot.png/revision/latest"
+    },
+    {
+      "_id": "Frosty_Chocolate_Milkshakes",
+      "title": "Frosty Chocolate Milkshakes",
+      "description": "Frosty Chocolate Milkshakes were Homer Simpson's signature drink in the The Simpsons shorts. The...",
+      "price": 22.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Fudd_Beer",
+      "title": "Fudd Beer",
+      "description": "Fudd Beer is the main beer used in Shelbyville and Spittle County. It is the chief competitor of...",
+      "price": 27.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/5/55/Fudd.png/revision/latest"
+    },
+    {
+      "_id": "Funopoly",
+      "title": "Funopoly",
+      "description": "Funopoly is a board game. It is the game for ages 8 to adult. It is one of many board games like...",
+      "price": 9.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/7/7c/Funopoly.png/revision/latest"
+    },
+    {
+      "_id": "Funtendo_DD",
+      "title": "Funtendo DD",
+      "description": "Homer bought a DD as a present for Bart.  In The Simpsons Game, Homer played a DD (or in this...",
+      "price": 27.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/f/f9/1607_Simpsons_Game%2C_The_%28US%29_50_4609.png/revision/latest"
+    },
+    {
+      "_id": "Funtendo_Zii",
+      "title": "Funtendo Zii",
+      "description": "The Funtendo Zii is a gaming console, it's an obvious parody of the Nintendo Wii. It first...",
+      "price": 27.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/4/41/Funtendo_Zii.png/revision/latest"
+    },
+    {
+      "_id": "Funzo",
+      "title": "Funzo",
+      "description": "Funzo was a toy released by Kid First Industries. The Funzo toy seemed to have a mind of its own...",
+      "price": 28.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/5/5a/Funzo.gif/revision/latest"
+    },
+    {
+      "_id": "Good_Samaritan",
+      "title": "Good Samaritan",
+      "description": "Good Samaritan is a religious board game that Rod and Todd Flanders play. When younger Bart...",
+      "price": 0.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/7/77/Good_Samaritan.jpg/revision/latest"
+    },
+    {
+      "_id": "Gorilla_Man_Scalp_Blaster",
+      "title": "Gorilla Man Scalp Blaster",
+      "description": "Gorilla Man Scalp Blaster is a hair growth product for men. Homer described it as \"one of those...",
+      "price": 15.99,
+      "categories": [
+        "Grooming Products"
+      ]
+    },
+    {
+      "_id": "Grade_F_Meat",
+      "title": "Grade F Meat",
+      "description": "Grade F Meat was the only meal that Lunch Lady Doris could serve the students and faculty of...",
+      "price": 21.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/a/a9/Treehouse-of-horror-v1.png/revision/latest"
+    },
+    {
+      "_id": "Grilled_Crayon_Sandwich",
+      "title": "Grilled Crayon Sandwich",
+      "description": "The Grilled Crayon Sandwich was a sandwich containing crayons and thumbtacks made by Ralph...",
+      "price": 4.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/3/36/Grilled_Crayon.png/revision/latest"
+    },
+    {
+      "_id": "Guatemalan_Insanity_Pepper",
+      "title": "Guatemalan Insanity Pepper",
+      "description": "The Merciless Pepper of Quetzalacatenango, also known as the Guatemalan Insanity Pepper, is a...",
+      "price": 26.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/0/09/Pepper.jpg/revision/latest"
+    },
+    {
+      "_id": "Guinness",
+      "title": "Guinness",
+      "description": "Guinness is a type of beer. It is brewed in the Guinness Brewery in Ireland. It is brewed in a...",
+      "price": 11.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/3/3f/Guinness.png/revision/latest"
+    },
+    {
+      "_id": "Gummi_Venus_de_Milo",
+      "title": "Gummi Venus de Milo",
+      "description": "The Gummi Venus de Milo (also referred to as \"Gummi Venus\"), the rarest gummi of them all, it...",
+      "price": 13.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/5/5e/Gummi-Venus.jpg/revision/latest"
+    },
+    {
+      "_id": "H.R._Muffin_Stuff",
+      "title": "H.R. Muffin Stuff",
+      "description": "H.R. Muffin Stuff is a muffin store that opened on the same block as Edna Krabappel's muffin...",
+      "price": 25.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/7/72/HR_Muffin_Stuff.png/revision/latest"
+    },
+    {
+      "_id": "Hair_In_A_Drum",
+      "title": "Hair In A Drum",
+      "description": "Hair in a Drum is a hair growth product in a large jug, sold at$19.95 at the Hair Clinic...",
+      "price": 8.99,
+      "categories": [
+        "Grooming Products"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/e/e9/Hair_In_A_Drum.png/revision/latest"
+    },
+    {
+      "_id": "Jaffy_Land",
+      "title": "Jaffy Land",
+      "description": "Jaffy Land is a board game. It is one of many board games the Simpson family owns.",
+      "price": 23.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/0/0b/Jaffy_Land.png/revision/latest"
+    },
+    {
+      "_id": "Jim_Jam_Cereal",
+      "title": "Jim Jam Cereal",
+      "description": "Jim Jam Cereal is cereal featuring Jim-Jam Bonks. After Bart and Lisa persuaded Randall Curtis...",
+      "price": 16.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/4/47/Jim_Jam_Cereal.jpg/revision/latest"
+    },
+    {
+      "_id": "Johnny_Depp_Chocolate_Figure",
+      "title": "Johnny Depp Chocolate Figure",
+      "description": "This Johnny Depp chocolate figure appeared after all sugar products were banned from...",
+      "price": 4.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Killer_Krusty_Doll",
+      "title": "Killer Krusty Doll",
+      "description": "The Killer Krusty Doll was a toy that Homer bought as a birthday present for Bart. In search of...",
+      "price": 6.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/0/08/Krusty_doll.jpg/revision/latest"
+    },
+    {
+      "_id": "Krusty_Brand_Geiger_Counter",
+      "title": "Krusty Brand Geiger Counter",
+      "description": "Krusty Brand Geiger Counter is a device for measuring radioactivity. It is part of merchandise...",
+      "price": 7.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/f/f1/Krusty_Brand_Geiger_Counter_.png/revision/latest"
+    },
+    {
+      "_id": "Krusty_Brand_Operation_Game",
+      "title": "Krusty Brand Operation Game",
+      "description": "Krusty Brand Operation Game is a game that is part of merchandise Krusty endorses and sells.The...",
+      "price": 2.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/e/ee/Krusty_brand_operation_game.png/revision/latest"
+    },
+    {
+      "_id": "Krusty_Brand_Seal_of_Approval",
+      "title": "Krusty Brand Seal of Approval",
+      "description": "The Krusty Brand Seal of Approval is a sticker placed on all of Krusty's products. In theory...",
+      "price": 10.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/2/20/Krusty_Brand_Seal_of_Approval.gif/revision/latest"
+    },
+    {
+      "_id": "Category:Krusty_Burger",
+      "title": "Krusty Burger",
+      "description": "Krusty Burger",
+      "price": 19.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/3/3f/The_itchy_and_krusty_and_fat_tony_and_scrtatchy_show.png/revision/latest"
+    },
+    {
+      "_id": "Krusty_Charms",
+      "title": "Krusty Charms",
+      "description": "Krusty Charms is a Krusty the clown product. It is a cereal based on Lucky Charms cereal...",
+      "price": 19.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/a/af/Ice_Cream_of_Margie_%28with_the_Light_Blue_Hair%29_1.JPG/revision/latest"
+    },
+    {
+      "_id": "Krusty_Doll",
+      "title": "Krusty Doll",
+      "description": "A Krusty doll is a toy doll that looks like Krusty the Clown and is part of merchandise Krusty...",
+      "price": 10.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/e/e5/Krusty_Doll.jpg/revision/latest"
+    },
+    {
+      "_id": "Krusty_Fried_Chicken",
+      "title": "Krusty Fried Chicken",
+      "description": "Krusty Fried Chicken is a Krusty branded restaurant in Beijing, China. The Simpsons visit here...",
+      "price": 14.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/9/96/Screen_Shot_2012-01-02_at_1.00.22_AM.png/revision/latest"
+    },
+    {
+      "_id": "Krusty_Kologne",
+      "title": "Krusty Kologne",
+      "description": "Krusty nontoxic Kologne is a grooming product.On the bottle it reads: The smell of the big top...",
+      "price": 26.99,
+      "categories": [
+        "Grooming Products"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/9/99/Krusty_Kologne.png/revision/latest"
+    },
+    {
+      "_id": "Krusty_Partially_Gelatinated_Non-Dairy_Gum-Based_Beverages",
+      "title": "Krusty Partially Gelatinated Non-Dairy Gum-Based Beverages",
+      "description": "Krusty Partially Gelatinated Non-Dairy Gum-Based Beverages is an item from the Krusty Burger...",
+      "price": 11.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Krusty_klump_bar",
+      "title": "Krusty klump bar",
+      "description": "A Krusty Klump Bar is a candy bar and is part of the merchandise Krusty the Clown endorses and...",
+      "price": 23.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/9/91/Krusty_klump_bar_sign.png/revision/latest"
+    },
+    {
+      "_id": "Krusty%27s_Kreepy_Konjuring_Kit",
+      "title": "Krusty's Kreepy Konjuring Kit",
+      "description": "Krusty's Kreepy Konjuring Kit is a magic kit by Krusty the Clown. Bart was angry because Lisa...",
+      "price": 10.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/5/57/Krusty%27s_Kreepy_Konjuring_Kit.jpg/revision/latest"
+    },
+    {
+      "_id": "Krusty%27s_Speak_and_Say",
+      "title": "Krusty's Speak and Say",
+      "description": "Krusty's Speak and Say is a piece of Krusty Merchandise. It features a pull system, where you...",
+      "price": 6.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/6/6a/KSpeak.jpg/revision/latest"
+    },
+    {
+      "_id": "Krusty-Brand_Home_Pregnancy_Test",
+      "title": "Krusty-Brand Home Pregnancy Test",
+      "description": "Krusty-Brand Home Pregnancy Test is a pregnancy test developed by Krusty's merchandise company...",
+      "price": 7.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/4/49/I_Love_Lisa_66.JPG/revision/latest"
+    },
+    {
+      "_id": "Krusty-O%27s",
+      "title": "Krusty-O's",
+      "description": "Krusty-O's is a brand of the breakfast cereals endorsed by Krusty the Clown which prominently...",
+      "price": 15.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/a/a9/Krusty-Os.jpg/revision/latest"
+    },
+    {
+      "_id": "Kwik-E-Fresh_Chicken",
+      "title": "Kwik-E-Fresh Chicken",
+      "description": "Kwik-E-Fresh Chicken is a poultry product from the Kwik-E-Mart. When Homer tries to sabotage the...",
+      "price": 26.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/3/3b/Kwikefreshchicken.png/revision/latest"
+    },
+    {
+      "_id": "LEGO",
+      "title": "LEGO",
+      "description": "LEGO is a popular line of construction toys manufactured by The LEGO Group, a privately held...",
+      "price": 7.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/3/30/71006.jpg/revision/latest"
+    },
+    {
+      "_id": "Lakeside_Boggle",
+      "title": "Lakeside Boggle",
+      "description": "Lakeside Boggle is a board game the Simpson family owns. Homer and Marge took this game to their...",
+      "price": 13.99,
+      "categories": [
+        "Toys"
+      ]
+    },
+    {
+      "_id": "Larry_the_Lamb",
+      "title": "Larry the Lamb",
+      "description": "Larry the Lamb is the fourth grade's toy to take home for the weekend. Each person that takes...",
+      "price": 0.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/e/e0/Larry_the_lamb.png/revision/latest"
+    },
+    {
+      "_id": "Le_Krusty_Burger",
+      "title": "Le Krusty Burger",
+      "description": "Le Krusty Burger is a fast-food burger restaurant chain in France that is based on Krusty...",
+      "price": 0.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/4/49/Le_Krusty_Burger.png/revision/latest"
+    },
+    {
+      "_id": "Licky_Strikes",
+      "title": "Licky Strikes",
+      "description": "Licky Strikes is a type of candy cigarette. There was a rumor at Springfield Elementary, that if...",
+      "price": 18.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/5/57/Licky_Strikes.png/revision/latest"
+    },
+    {
+      "_id": "Lisa_Lionheart",
+      "title": "Lisa Lionheart",
+      "description": "Lisa Lionheart is a doll created by Lisa and Stacy Lovell. Lisa Lionheart was designed to...",
+      "price": 22.99,
+      "categories": [
+        "Toys"
+      ]
+    },
+    {
+      "_id": "Lucky_Lindy%27s_Pomade",
+      "title": "Lucky Lindy's Pomade",
+      "description": "Lucky Lindy refers to the nickname of aviator Charles Lindbergh. The product's slogan,\"You'll...",
+      "price": 16.99,
+      "categories": [
+        "Grooming Products"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/d/d1/Old_money_-00040.jpg/revision/latest"
+    },
+    {
+      "_id": "Lunar_Lemon",
+      "title": "Lunar Lemon",
+      "description": "Lunar Lemon is a Goddess Bar bar. When Edna Krabappel was eating her breakfast, she combined...",
+      "price": 8.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/4/4d/Lunar_Lemon.png/revision/latest"
+    },
+    {
+      "_id": "M%26M%27s",
+      "title": "M&M's",
+      "description": "M&M's is a type of candy. Marge once told Wolfgang Puck that she puts M&M's in her rice krispies...",
+      "price": 19.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Magic_Kit",
+      "title": "Magic Kit",
+      "description": "Magic Kit is a magician's box for age of 8 to 80. After seeing Diablo's show at Magic Palace...",
+      "price": 25.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/6/6e/Magic_Kit.jpg/revision/latest"
+    },
+    {
+      "_id": "Malibu_Stacy",
+      "title": "Malibu Stacy",
+      "description": "Malibu Stacy is a plastic doll that is manufactured within Springfield by the Maliby Stacy...",
+      "price": 8.99,
+      "categories": [
+        "Toys"
+      ]
+    },
+    {
+      "_id": "Malk",
+      "title": "Malk",
+      "description": "Malk is a drink which is served with the lunches at Springfield Elementary School instead of...",
+      "price": 11.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/3/3c/Malk.jpg/revision/latest"
+    },
+    {
+      "_id": "Mama_Celeste_Sausage_Pizza",
+      "title": "Mama Celeste Sausage Pizza",
+      "description": "Mama Celeste Sausage Pizza is a brand of sausage pizza whose mascot is Mama Celeste. Homer tried...",
+      "price": 8.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/a/ae/Mama_Celeste.jpg/revision/latest"
+    },
+    {
+      "_id": "Market",
+      "title": "Market",
+      "description": "Market is a food market in Downtown Springfield located on a one-way road. There may be two...",
+      "price": 16.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/a/a9/Market1.jpg/revision/latest"
+    },
+    {
+      "_id": "McGriff_the_Crime_Dog",
+      "title": "McGriff the Crime Dog",
+      "description": "McGriff the Crime Dog is a mascot of Springfield Police Department. When Marge worked as a...",
+      "price": 23.99,
+      "categories": [
+        "Toys"
+      ]
+    },
+    {
+      "_id": "Mister_Honeybunny",
+      "title": "Mister Honeybunny",
+      "description": "The innocence of youth (alas): Dressed in an elegant black suit and tie, Mister Honeybunny is...",
+      "price": 9.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/4/44/250px-Mister_Honeybunny.png/revision/latest"
+    },
+    {
+      "_id": "Money_drink",
+      "title": "Money drink",
+      "description": "Money drink was the drink that Krusty blended out of money. At The Snub Club, Krusty put some...",
+      "price": 17.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/c/c3/Money_Drink.png/revision/latest"
+    },
+    {
+      "_id": "Mother_Nature_Burger",
+      "title": "Mother Nature Burger",
+      "description": "The Mother Nature Burger is an item from Krusty Burger that is made from \"wheat-fed\" barley. It...",
+      "price": 26.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/b/b6/Mother_nature_burger.png/revision/latest"
+    },
+    {
+      "_id": "Mouse_Catch",
+      "title": "Mouse Catch",
+      "description": "Mouse Catch is a board game. It is one of many board games the Simpson family owns.",
+      "price": 5.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/e/eb/Mouse_Catch.png/revision/latest"
+    },
+    {
+      "_id": "Muffin_Store",
+      "title": "Muffin Store",
+      "description": "Muffin Store is a store that sells muffins that was still in construction at the time Edna...",
+      "price": 6.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/5/54/Muffin_Store.png/revision/latest"
+    },
+    {
+      "_id": "My_1st_Video_Editor",
+      "title": "My 1st Video Editor",
+      "description": "My 1st Video Editor is a basic video editing device for VHS tapes. Lisa used this to make a...",
+      "price": 27.99,
+      "categories": [
+        "Toys"
+      ]
+    },
+    {
+      "_id": "MyCube",
+      "title": "MyCube",
+      "description": "The MyCube is a computer made by Mapple. Homer saw a MyCube in a Mapple Store and was eager to...",
+      "price": 13.99,
+      "categories": [
+        "Electronics"
+      ]
+    },
+    {
+      "_id": "MyPad",
+      "title": "MyPad",
+      "description": "The MyPad is a tablet made by Mapple. MyPad is a parody of the Apple iPad. Homer played The...",
+      "price": 16.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/9/95/MyPad.png/revision/latest"
+    },
+    {
+      "_id": "MyPhone",
+      "title": "MyPhone",
+      "description": "The MyPhone is a cell phone made by Mapple, and available for purchase in Mapple stores. Lisa...",
+      "price": 28.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/9/92/Mab_store.jpg/revision/latest"
+    },
+    {
+      "_id": "MyPhonies",
+      "title": "MyPhonies",
+      "description": "MyPhonies are fake earbuds made by Mapple. Lisa Simpson looked at the MyPhonies when she was...",
+      "price": 18.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/4/4d/MyPhonies.gif/revision/latest"
+    },
+    {
+      "_id": "MyPod",
+      "title": "MyPod",
+      "description": "The MyPod is a portable media player designed and marketed by Steve Mobbs and Mapple. It is...",
+      "price": 1.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/0/0f/MyPod1.png/revision/latest"
+    },
+    {
+      "_id": "Nature%27s_Goodness",
+      "title": "Nature's Goodness",
+      "description": "Nature's Goodness is a drink Bart imagined during a fantasy in the episode, \"Whacking Day.\" He...",
+      "price": 6.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/9/9e/7.png/revision/latest"
+    },
+    {
+      "_id": "Newman%27s_Own_Salad_Dressing",
+      "title": "Newman's Own Salad Dressing",
+      "description": "Newman's Own Salad Dressing is a brand of salad dressing whose mascot is Paul Newman. Homer...",
+      "price": 18.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/b/bc/Paul_Newman_character.jpg/revision/latest"
+    },
+    {
+      "_id": "Nighthawk_Diner",
+      "title": "Nighthawk Diner",
+      "description": "Nighthawk Diner is a diner in Springfield. Rex Banner celebrated his birthday there with Eddie...",
+      "price": 25.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/0/01/Nighthawk_Diner.png/revision/latest"
+    },
+    {
+      "_id": "Ocean_Spray",
+      "title": "Ocean Spray",
+      "description": "Ocean Spray is a cranberry juice. When Kirk and Luann Van Houten got lost in the sea, Milhouse...",
+      "price": 18.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Official_Krusty_the_Clown_Walkie-Talkies",
+      "title": "Official Krusty the Clown Walkie-Talkies",
+      "description": "Official Krusty the Clown Walkie-Talkies are walkie-talkies made by Krusty the Clown. When Bart...",
+      "price": 4.99,
+      "categories": [
+        "Krusty Burger",
+        "Krusty Merchandise"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/c/cd/Official_Krusty_the_Clown_Walkie-Talkies.jpg/revision/latest"
+    },
+    {
+      "_id": "Oreo",
+      "title": "Oreo",
+      "description": "Oreo is a brand of cookies. When the Simpsons family was in The 1895 Challenge, they visited the...",
+      "price": 11.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/d/d4/Oreo2.png/revision/latest"
+    },
+    {
+      "_id": "Panda_cone",
+      "title": "Panda cone",
+      "description": "A Panda Cone is a type of ice cream that Milhouse wanted his father, Kirk Van Houten to buy him...",
+      "price": 26.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Planet_Springfield",
+      "title": "Planet Springfield",
+      "description": "Planet Springfield is a restaurant owned by Rainier Wolfcastle, Chuck Norris, Johnny Carson's...",
+      "price": 14.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Poopsie_the_Clown",
+      "title": "Poopsie the Clown",
+      "description": "Poopsie the Clown is a glow-in-the-dark toy clown. During the sale on a cable shopping channel...",
+      "price": 8.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/9/90/Poopsie_the_Clown-00002.jpg/revision/latest"
+    },
+    {
+      "_id": "Pork_Rinds_Lite",
+      "title": "Pork Rinds Lite",
+      "description": "Pork Rinds Lite are a brand of pork rind that Homer is seen eating these in \"One Fish, Two Fish...",
+      "price": 18.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Pork_chops",
+      "title": "Pork chops",
+      "description": "Pork chops is Homer's favorite dish, probably besides donuts. He especially likes pork chops...",
+      "price": 1.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/1/1e/Homer-simpson-comida-hombre-2-.png/revision/latest"
+    },
+    {
+      "_id": "Pork_rinds",
+      "title": "Pork rinds",
+      "description": "Pork Rinds are a snack enjoyed by Homer Simpson. They are a chip-like snack that is created out...",
+      "price": 25.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Powersauce",
+      "title": "Powersauce",
+      "description": "Powersauce is an energy bar that is said to include 6 types of apples. Homer ate a lot of...",
+      "price": 4.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/5/58/Powersauce.jpg/revision/latest"
+    },
+    {
+      "_id": "R._Crumb%27s_Keep_on_Muffin%27",
+      "title": "R. Crumb's Keep on Muffin'",
+      "description": "R. Crumb's Keep on Muffin' is a muffin store that opened on the same block as Edna Krabappel's...",
+      "price": 16.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/6/67/Keep_On_Muffin.png/revision/latest"
+    },
+    {
+      "_id": "Ravenous_Ravenous_Rhinos",
+      "title": "Ravenous Ravenous Rhinos",
+      "description": "Ravenous Ravenous Rhinos is a board game. It is one of many board games the Simpson family owns.",
+      "price": 18.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/6/6c/Ravenous_ravenous_rhinos.png/revision/latest"
+    },
+    {
+      "_id": "Red_Tick_Beer",
+      "title": "Red Tick Beer",
+      "description": "Red Tick Beer is a beer sold at Moe's Tavern. Homer tries Red Tick Beer one night at Moe's when...",
+      "price": 11.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/4/45/RedTickBrewery.jpg/revision/latest"
+    },
+    {
+      "_id": "Red_Tick_Beer_Brewery",
+      "title": "Red Tick Beer Brewery",
+      "description": "Red Tick Brewery is the place where Red Tick Beer is made. This brewery supplies to bars such as...",
+      "price": 11.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/8/8d/RedTickBrewery-1-.jpg/revision/latest"
+    },
+    {
+      "_id": "Rex_Mars_Atomic_Discombobulator",
+      "title": "Rex Mars Atomic Discombobulator",
+      "description": "Rex Mars Atomic Discombobulator is a toy ray gun that is for sale at Cockamamie's. It costs...",
+      "price": 9.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/6/68/Rex_Mars_Atomic_Discombobulator.png/revision/latest"
+    },
+    {
+      "_id": "Ribwich",
+      "title": "Ribwich",
+      "description": "The Ribwich was a limited time item on the menu at the fast food chain Krusty Burger. The...",
+      "price": 18.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/8/88/Ribwich.png/revision/latest"
+    },
+    {
+      "_id": "Ritz_Bits",
+      "title": "Ritz Bits",
+      "description": "Ritz Bits with S'mores",
+      "price": 26.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Satan%27s_Path",
+      "title": "Satan's Path",
+      "description": "Satan's Path is a board game which turns other board games to life. The only way to win is to...",
+      "price": 19.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/f/fe/Satan%27s_Path.jpg/revision/latest"
+    },
+    {
+      "_id": "Scammer_and_Z-Dog",
+      "title": "Scammer and Z-Dog",
+      "description": "Scammer and Z-Dog is a line of snack machines. Principal Skinner signed a contract with the...",
+      "price": 19.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/1/11/Scammer-Z-Dog.jpg/revision/latest"
+    },
+    {
+      "_id": "Scent_of_a_wookiee",
+      "title": "Scent of a wookiee",
+      "description": "Scent of a wookiee is a cologne from the Star Wars collection. Homer used this cologne on his...",
+      "price": 14.99,
+      "categories": [
+        "Grooming Products"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/1/1b/Scent_of_a_Wookiee_-00001.png/revision/latest"
+    },
+    {
+      "_id": "Sciencewater",
+      "title": "Sciencewater",
+      "description": "Sciencewater is a brand of water that appears only in Waverly Hills 9-0-2-1-D'oh. It goes out of...",
+      "price": 15.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/5/59/Sciencewater.png/revision/latest"
+    },
+    {
+      "_id": "Seven_Seas_Italian_Dressing",
+      "title": "Seven Seas Italian Dressing",
+      "description": "Seven Seas Italian Dressing is a vinaigrette-type salad dressing. When Kirk and Luann Van Houten...",
+      "price": 13.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Shiner-_Be-_Gone",
+      "title": "Shiner- Be- Gone",
+      "description": "Shiner-Be-Gone is a grooming product that removes the appearance of a black eye. It is applied...",
+      "price": 23.99,
+      "categories": [
+        "Grooming Products"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/b/b3/Shiner_Be_Gone.png/revision/latest"
+    },
+    {
+      "_id": "Simpson_%26_Son_Revitalizing_Tonic",
+      "title": "Simpson & Son Revitalizing Tonic",
+      "description": "Simpson and Son Revitalizing Tonic is an aphrodisiac sold by Grampa and Homer. The tonic was...",
+      "price": 1.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/c/cd/Simpson_%26_son_revitalizing_tonic.png/revision/latest"
+    },
+    {
+      "_id": "Sir_Loins-A-Lot",
+      "title": "Sir Loins-A-Lot",
+      "description": "\"Sir-Loins-A-Lot\" is a 16 pound steak, the largest available at the restaurant \"The...",
+      "price": 26.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/9/98/Sir_Loins-A-Lot.png/revision/latest"
+    },
+    {
+      "_id": "Slim_Mints",
+      "title": "Slim Mints",
+      "description": "Slim Mints are a confectionery product sold by girl scouts. When Homer is interrupted by Lisa in...",
+      "price": 18.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/8/8a/Slimints.png/revision/latest"
+    },
+    {
+      "_id": "Smooshies",
+      "title": "Smooshies",
+      "description": "Smooshies are a drink which is delivered by a hobo to the Kwik-E-Mart, instead of Annette...",
+      "price": 6.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/0/0f/10436099_811964775502604_3513361057570469903_n.jpg/revision/latest"
+    },
+    {
+      "_id": "Snake_Rice_Wine",
+      "title": "Snake Rice Wine",
+      "description": "Snake Rice Wine is a type of wine that Homer Simpson and Kumiko's father had while in a Chinese...",
+      "price": 5.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/c/cf/Snake_wine.jpg/revision/latest"
+    },
+    {
+      "_id": "Soylent_Green",
+      "title": "Soylent Green",
+      "description": "Soylent Green is a food product made out of deceased humans. The euthanasia center is a place...",
+      "price": 18.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/0/07/Soylentgreen.gif/revision/latest"
+    },
+    {
+      "_id": "Spy_camera",
+      "title": "Spy camera",
+      "description": "The spy camera was a small film camera that Bart bought from a magazine. He kept pestering the...",
+      "price": 19.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/b/bf/Spy_camera_2.jpg/revision/latest"
+    },
+    {
+      "_id": "Squeaky_Farms_Brand_Genuine_Animal_Milk",
+      "title": "Squeaky Farms Brand Genuine Animal Milk",
+      "description": "Squeaky Farms Brand Genuine Animal Milk was a rat milking company owned by Fat Tony. Fat Tony...",
+      "price": 10.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/8/83/Genuine_Animal_Milk.png/revision/latest"
+    },
+    {
+      "_id": "Squishee",
+      "title": "Squishee",
+      "description": "The Squishee (sometimes spelled Squishy or Squishie) is a frozen drink, supposedly unhealthy...",
+      "price": 8.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/7/7e/Squishee.png/revision/latest"
+    },
+    {
+      "_id": "Strupo",
+      "title": "Strupo",
+      "description": "The fictional beverage Strupo is a \"crushingly-addictive\" caper-based liqueur made on the island...",
+      "price": 22.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Superstar_Celebrity_Microphone",
+      "title": "Superstar Celebrity Microphone",
+      "description": "The Superstar Celebrity Microphone is a toy microphone that can be used to send voices over the...",
+      "price": 27.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/1/17/Superstarcelebmic.jpg/revision/latest"
+    },
+    {
+      "_id": "Sweet_Emotions",
+      "title": "Sweet Emotions",
+      "description": "Sweet Emotions is a cereal that was in an episode of the Simpsons. Bart was eating cereal and it...",
+      "price": 3.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/b/b8/23582_108465422512036_108465145845397_158048_1158013_n.jpg/revision/latest"
+    },
+    {
+      "_id": "THX",
+      "title": "THX",
+      "description": "THX is a real-life sound system used for several movies. The noise is so loud it caused the room...",
+      "price": 11.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/f/fa/THX.png/revision/latest"
+    },
+    {
+      "_id": "Tac_Tics",
+      "title": "Tac Tics",
+      "description": "Tac Tics are mints that come in little plastic containers. Bart swaps Marge's birth control...",
+      "price": 23.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Tandem_Bike_Ride_With_Your_Mom",
+      "title": "Tandem Bike Ride With Your Mom",
+      "description": "‎Tandem Bike Ride With Your Mom is a game Bart once played. When Marge bought a tandem bike, she...",
+      "price": 17.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/a/a1/Tandem_Bike_Ride_With_Your_Mom.jpg/revision/latest"
+    },
+    {
+      "_id": "The_Clogger",
+      "title": "The Clogger",
+      "description": "The Clogger is a greasy fat dripping burger, available to buy at Krusty Burger. Krusty used a...",
+      "price": 0.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/a/a1/The_clogger.jpg/revision/latest"
+    },
+    {
+      "_id": "The_Frying_Dutchman",
+      "title": "The Frying Dutchman",
+      "description": "The Frying Dutchman, owned by Captain Horatio McCallister, is a seafood restaurant in...",
+      "price": 28.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/3/3a/The_Frying_Dutchman.jpg/revision/latest"
+    },
+    {
+      "_id": "The_Gilded_Truffle",
+      "title": "The Gilded Truffle",
+      "description": "The Gilded Truffle is an elegant, upscale restaurant in Springfield. It is popular for having...",
+      "price": 5.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/d/dd/Fabf01_20_goldener_trueffel.jpg/revision/latest"
+    },
+    {
+      "_id": "The_Metal_Krusty-O",
+      "title": "The Metal Krusty-O",
+      "description": "Bart was eating a bowl of Krusty-O's for breakfast. Unbeknownst to him, there was a jagged metal...",
+      "price": 22.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "The_Pooter_Toot_Express",
+      "title": "The Pooter Toot Express",
+      "description": "The Pooter Toot Express is a toy wind up train that has two farting figures on a handcart. Homer...",
+      "price": 10.99,
+      "categories": [
+        "Toys"
+      ]
+    },
+    {
+      "_id": "The_Singing_Sirloin",
+      "title": "The Singing Sirloin",
+      "description": "The Singing Sirloin, the \"Home of Ballads and Salads,\" is a restaurant in Downtown Springfield...",
+      "price": 23.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/2/2c/Singing_sirloin.png/revision/latest"
+    },
+    {
+      "_id": "TiVo",
+      "title": "TiVo",
+      "description": "TiVo is a personal video recorder that is used with the TV and records TV Shows and skips the...",
+      "price": 2.99,
+      "categories": [
+        "Electronics"
+      ]
+    },
+    {
+      "_id": "Tiddlywonks",
+      "title": "Tiddlywonks",
+      "description": "Tiddlywonks is a board game. It is one of many board games the Simpson family owns.",
+      "price": 11.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/0/0d/Tiddlywonks.png/revision/latest"
+    },
+    {
+      "_id": "Tom_Selleck_Mustache_Flattener",
+      "title": "Tom Selleck Mustache Flattener",
+      "description": "The Tom Selleck Mustache Flattener is a grooming product used by Ned Flanders. Episode – \"Super...",
+      "price": 14.99,
+      "categories": [
+        "Grooming Products"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/2/27/Tom_Selleck_Mustache_Flattener.png/revision/latest"
+    },
+    {
+      "_id": "Tomacco",
+      "title": "Tomacco",
+      "description": "Tomacco is the produce made by Homer, when mixing Tobacco and Tomatoes after putting a plutonium...",
+      "price": 13.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette1.wikia.nocookie.net/simpsons/images/c/c0/Tomacco.jpg/revision/latest"
+    },
+    {
+      "_id": "Trouble",
+      "title": "Trouble",
+      "description": "Trouble is a board game that the Simpson family own. When Bart had a problem, he told about it...",
+      "price": 1.99,
+      "categories": [
+        "Toys"
+      ]
+    },
+    {
+      "_id": "Tubb",
+      "title": "Tubb",
+      "description": "Tubb is a food product found in the Simpsons. A curious manufactured food item found in the...",
+      "price": 13.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ]
+    },
+    {
+      "_id": "Urkel-O%27s",
+      "title": "Urkel-O's",
+      "description": "Urkel-O's is a cereal brand. When the Simpsons family was in The 1895 Challenge, they visited...",
+      "price": 2.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/3/38/Urkel-O%27s.png/revision/latest"
+    },
+    {
+      "_id": "VHS",
+      "title": "VHS",
+      "description": "Video Home System is a videotape format designed for consumers. My 1st Video Editor supports VHS.",
+      "price": 28.99,
+      "categories": [
+        "Electronics"
+      ]
+    },
+    {
+      "_id": "WWII_Beans",
+      "title": "WWII Beans",
+      "description": "The WWII Beans were a tin of beans that presumably were meant to be eaten during World War II...",
+      "price": 18.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette3.wikia.nocookie.net/simpsons/images/0/02/Doris.png/revision/latest"
+    },
+    {
+      "_id": "White_Chocolate_Rabbit",
+      "title": "White Chocolate Rabbit",
+      "description": "The White Chocolate Rabbit is a rabbit made out of white chocolate. It only appeared in Homer's...",
+      "price": 4.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette4.wikia.nocookie.net/simpsons/images/5/51/White_Chocolate_Rabbit.png/revision/latest"
+    },
+    {
+      "_id": "Words_with_Enemies",
+      "title": "Words with Enemies",
+      "description": "Words with Enemies is an app on the MyPad that Homer owns. While searching for a game to play...",
+      "price": 12.99,
+      "categories": [
+        "Electronics"
+      ]
+    },
+    {
+      "_id": "Yahtzee",
+      "title": "Yahtzee",
+      "description": "Yahtzee is a dice game. When it was raining outside, Edna suggested to her stepsons, Rod and...",
+      "price": 24.99,
+      "categories": [
+        "Toys"
+      ]
+    },
+    {
+      "_id": "Yahtzu",
+      "title": "Yahtzu",
+      "description": "Yahtzu is a board game. It is one of many board games the Simpson family owns.",
+      "price": 12.99,
+      "categories": [
+        "Toys"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/f/f9/Yahtzu.png/revision/latest"
+    },
+    {
+      "_id": "Yum_Yum_Fish",
+      "title": "Yum Yum Fish",
+      "description": "Yum Yum Fish are a type of fish that Marge describes as the most delicious fish in the Ocean...",
+      "price": 27.99,
+      "categories": [
+        "Duff Beer",
+        "Food and drinks"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/3/30/Yum_Yum_Fish.png/revision/latest"
+    },
+    {
+      "_id": "Zii_Sports",
+      "title": "Zii Sports",
+      "description": "Zii Sports was a game for the Funtendo Zii. Residents at the Springfield Retirement Castle often...",
+      "price": 17.99,
+      "categories": [
+        "Electronics"
+      ],
+      "image": "http://vignette2.wikia.nocookie.net/simpsons/images/7/77/Funtendo_zii_golf.jpg/revision/latest"
+    }
+  ]
+}
