@@ -1,12 +1,11 @@
+var url = require('url');
 var request = require('request');
 
-var host = 'http://localhost:5984/_config/admins/';
-var username = 'root';
-var password = '"asdf"';
-
-request.put({
-  uri: host + username,
-  body: password
-}, function(err, response, body) {
-  console.log(err, body);
-});
+module.exports = function(host, username, password, cb) {
+  request.put({
+    uri: url.resolve(host, '_config/admins/' + username),
+    body: '"' + password + '"'
+  }, function(err, response, body) {
+    cb(err, response, body);
+  });
+};
