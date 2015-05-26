@@ -4,6 +4,7 @@ var webpack = require('webpack');
 var pkg = require('./package.json');
 
 var DEBUG = process.env.NODE_ENV !== 'production';
+//var IP = process.env.NODE_ENV.IP;
 
 var jsBundle = path.join('js', util.format('[name].%s.js', pkg.version));
 

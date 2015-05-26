@@ -21,7 +21,7 @@ export default class Create extends React.Component {
 
 /*eslint no-alert: 0 */
   static willTransitionFrom(transition, element) {
-    if (element.refs.userInput.getDOMNode().value !== '') {
+    if (element.refs.productName.getDOMNode().value !== '') {
       if (!confirm('You have unsaved information, are you sure you want to leave this page?')) {
         transition.abort();
       }
