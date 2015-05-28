@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "boom": "^2.7.1",
+    "elasticsearch": "^4.1.0",
     "joi": "^6.4.1"
   },
   "engines": {

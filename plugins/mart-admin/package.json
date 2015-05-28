@@ -14,6 +14,7 @@
     "clean": "rm -rf $npm_package_config_build_dir && mkdir $npm_package_config_build_dir",
     "start": "NODE_ENV=development npm run webpack && npm run start-dev-server",
     "webpack": "webpack --colors --progress --config ./webpack.config.js",
+    "watch": "webpack --watch --colors --progress --config ./webpack.config.js",
     "start-dev-server": "webpack-dev-server --colors --port $npm_package_config_dev_port --content-base $npm_package_config_build_dir --config webpack.config.js --output-pathinfo --inline",
     "build": "NODE_ENV=production npm run webpack",
     "lint": "eslint --ext .js --ext .jsx ./app && echo No linting errors.",
