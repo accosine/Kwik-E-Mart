@@ -26,4 +26,11 @@ export default class WebAPI{
     .end(cb);
   }
 
+  search(type, q, cb) {
+    request
+    .get(this.URL + '/admin/search')
+    .query({ type })
+    .query({ q })
+    .end(cb);
+  }
 }
