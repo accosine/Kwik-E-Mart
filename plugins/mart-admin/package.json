@@ -9,7 +9,6 @@
     "env": "env",
     "prerelease": "npm test",
     "prestart": "npm install",
-    "pretest": "npm run lint",
     "prewebpack": "npm run clean",
     "clean": "rm -rf $npm_package_config_build_dir && mkdir $npm_package_config_build_dir",
     "start": "NODE_ENV=development npm run webpack && npm run start-dev-server",
@@ -17,19 +16,22 @@
     "watch": "webpack --watch --colors --progress --config ./webpack.config.js",
     "start-dev-server": "webpack-dev-server --colors --port $npm_package_config_dev_port --content-base $npm_package_config_build_dir --config webpack.config.js --output-pathinfo --inline",
     "build": "NODE_ENV=production npm run webpack",
-    "lint": "eslint --ext .js --ext .jsx ./app && echo No linting errors.",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext .js --ext .jsx ./www && echo No linting errors.",
+    "test": "jest"
   },
   "devDependencies": {
-    "babel-core": "^4.7.16",
-    "babel-loader": "^4.2.0",
-    "babel-runtime": "^4.7.16",
+    "babel-core": "^5.5.6",
+    "babel-eslint": "^3.1.15",
+    "babel-jest": "^5.2.0",
+    "babel-loader": "^5.1.4",
+    "babel-runtime": "^5.5.6",
     "eslint": "^0.17.1",
     "eslint-plugin-react": "^1.6.1",
     "file-loader": "^0.8.1",
     "flux": "^2.0.1",
     "form-serialize": "^0.6.0",
     "html-loader": "^0.2.3",
+    "jest-cli": "^0.4.10",
     "keymirror": "^0.1.1",
     "lodash": "^3.5.0",
     "react": "^0.13.1",
@@ -41,5 +43,22 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "./jest-preprocessor.js",
+    "testPathDirs": [
+      "./www"
+    ],
+    "testFileExtensions": [
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
   }
 }
