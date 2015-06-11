@@ -27,7 +27,7 @@ export default {
       } else if (response && !response.ok) {
         payload.searchResults = REQUEST_ERROR;
       } else {
-        payload.searchResults = response;
+        payload.searchResults = response.body;
       }
 
       AppDispatcher.dispatch(payload);

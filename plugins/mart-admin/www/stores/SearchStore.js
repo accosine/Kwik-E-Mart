@@ -10,14 +10,13 @@ import {
 class SearchStore extends EventEmitter {
 
   constructor() {
-    this.data = { body : { hits: { total: 0 }}};
+    super();
+    this.data = {};
   }
 
   set(result) {
-    if(result !== REQUEST_PENDING) {
-      this.data = result;
-      this.emitChange();
-    }
+    this.data = result;
+    this.emitChange();
   }
 
   get() {
@@ -45,6 +44,7 @@ class SearchStore extends EventEmitter {
 let store = new SearchStore();
 
 AppDispatcher.register((action) => {
+  console.log(action);
   switch(action.actionType) {
     case API_SEARCH_TYPED:
       store.set(action.searchResults);
