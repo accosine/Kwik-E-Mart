@@ -15,12 +15,12 @@ import NotFound from './components/NotFound/NotFound';
 
 /*eslint no-multi-spaces: 0 */
 let routes = (
-  <Route           name="app"       handler={App} path="/">
-    <DefaultRoute  name="dashboard" handler={Dashboard}/>
-    <Route         name="create"    handler={Create}/>
-    <Route         name="update"    handler={Update}/>
-    <Route         name="delete"    handler={Delete}/>
-    <NotFoundRoute name="notfound"  handler={NotFound}/>
+  <Route           handler={App}       name="app" path="/">
+    <DefaultRoute  handler={Dashboard} name="dashboard" />
+    <Route         handler={Create}    name="create" />
+    <Route         handler={Update}    name="update" />
+    <Route         handler={Delete}    name="delete" />
+    <NotFoundRoute handler={NotFound}  name="notfound" />
   </Route>
 );
 

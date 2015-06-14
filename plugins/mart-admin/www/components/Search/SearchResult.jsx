@@ -15,6 +15,10 @@ class SearchResultList extends React.Component {
   }
 }
 
+SearchResultList.propTypes = {
+  items: React.PropTypes.array.isRequired
+};
+
 export default class SearchResult extends React.Component {
 
   render() {
@@ -26,3 +30,7 @@ export default class SearchResult extends React.Component {
     );
   }
 }
+
+SearchResult.propTypes = {
+  searchResults: React.PropTypes.object.isRequired
+};
