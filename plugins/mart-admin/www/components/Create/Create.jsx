@@ -9,9 +9,9 @@ export default class Create extends React.Component {
     return (
       <div>
         <h3>Create</h3>
-        <form ref="productForm" onSubmit={this.handleSubmit.bind(this)}>
-          <input type="text" name="productName" ref="productName" defaultValue="ohai" />
-          <input type="text" name="productPrize" ref="productPrize" defaultValue="ohai" />
+        <form onSubmit={this.handleSubmit.bind(this)} ref="productForm">
+          <input defaultValue="ohai" name="productName" ref="productName" type="text" />
+          <input defaultValue="ohai" name="productPrize" ref="productPrize" type="text" />
           <input type="submit" value="go" />
         </form>
         <br/>

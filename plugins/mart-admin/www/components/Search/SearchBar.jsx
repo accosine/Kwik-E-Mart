@@ -4,8 +4,12 @@ export default class SearchBar extends React.Component {
 
   render() {
     return (
-      <input ref="searchBar" type="text" name="search" placehoder="Search..."
-          onChange={this.props.getResults.bind(this, this)} />
+      <input name="search" onChange={this.props.getResults.bind(this, this)}
+          placehoder="Search..." ref="searchBar" type="text" />
     );
   }
 }
+
+SearchBar.propTypes = {
+  getResults: React.PropTypes.function.isRequired
+};
