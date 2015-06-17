@@ -1,7 +1,9 @@
 var Boom = require('boom');
 
+var prefix = 'product-';
+
 module.exports.get = function (request, reply) {
-  var productID = encodeURIComponent(request.params.productID);
+  var productID = prefix + encodeURIComponent(request.params.productID);
   console.log('GET Product with ID:', productID);
   request.server.methods.couch.get(request.params.productID,
       function (err, body, headers) {
@@ -15,7 +17,9 @@ module.exports.get = function (request, reply) {
 };
 
 module.exports.post = function (request, reply) {
-  var productID = encodeURIComponent(request.params.productID);
+  var productID = prefix + encodeURIComponent(request.params.productID);
+  request.payload.type = 'product';
+
   console.log('POST Product with ID:', productID);
   request.server.methods.couch.insert(request.payload, productID,
       function (err, body, headers) {
@@ -24,7 +28,7 @@ module.exports.post = function (request, reply) {
 };
 
 module.exports.delete = function (request, reply) {
-  var productID = encodeURIComponent(request.params.productID);
+  var productID = prefix + encodeURIComponent(request.params.productID);
   console.log('DELETE Product with ID:', productID);
   request.server.methods.couch.get(productID,
       function (err, body, headers) {
@@ -36,7 +40,9 @@ module.exports.delete = function (request, reply) {
 };
 
 module.exports.put = function (request, reply) {
-  var productID = encodeURIComponent(request.params.productID);
+  var productID = prefix + encodeURIComponent(request.params.productID);
+  request.payload.type = 'product';
+
   console.log('PUT Product with ID:', productID);
   request.server.methods.couch.get(productID,
       function (err, body, headers) {

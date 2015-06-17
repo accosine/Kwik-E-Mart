@@ -11,10 +11,10 @@ module.exports.post = {
     productID: Joi.string().min(3).max(20)
   },
   payload: Joi.object().keys({
-        name: Joi.string(),
+        title: Joi.string(),
         price: Joi.string(),
-        lagen: Joi.string().required(),
-        description: Joi.string()
+        description: Joi.string(),
+        categories: Joi.array(),
   })
 };
 

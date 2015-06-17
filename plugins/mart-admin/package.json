@@ -39,6 +39,7 @@
     "react-router": "^0.13.2",
     "superagent": "^1.1.0",
     "template-html-loader": "0.0.3",
+    "to-id": "^1.0.4",
     "webpack": "^1.7.3",
     "webpack-dev-server": "^1.7.0"
   },

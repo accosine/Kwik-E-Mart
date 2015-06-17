@@ -1,7 +1,7 @@
 import AppDispatcher from '../dispatcher/AppDispatcher';
 import WebAPI from '../util/WebAPI';
 
-const api = new WebAPI('http://192.168.178.6:8080');
+const api = new WebAPI('http://192.168.178.6:8080/admin');
 
 import {
   API_SEARCH_TYPED,
