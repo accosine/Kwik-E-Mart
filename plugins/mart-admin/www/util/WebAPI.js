@@ -15,20 +15,27 @@ export default class WebAPI{
 
   getProduct(productID, cb) {
     request
-    .get(this.URL + productID)
+    .get(this.URL + '/products/' + productID)
     .end(cb);
   }
 
-  setProduct(productID, product, cb) {
+  createProduct(productID, product, cb) {
     request
-    .post(this.URL + productID)
+    .post(this.URL + '/products/' + productID)
+    .send(product)
+    .end(cb);
+  }
+
+  updateProduct(productID, product, cb) {
+    request
+    .put(this.URL + '/products/' + productID)
     .send(product)
     .end(cb);
   }
 
   search(type, q, cb) {
     request
-    .get(this.URL + '/admin/search')
+    .get(this.URL + '/search')
     .query({ type })
     .query({ q })
     .end(cb);

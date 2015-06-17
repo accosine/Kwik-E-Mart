@@ -2,12 +2,14 @@
 import keymirror from 'keymirror';
 
 export default keymirror({
-  //API_GET_SEARCH_RESULTS: null,
   API_SEARCH_TYPED: null,
+  API_PRODUCT_REQUESTED: null,
 
   REQUEST_PENDING: null,
   REQUEST_TIMEOUT: null,
   REQUEST_ERROR: null,
 
-  SEARCH_RESULTS_UPDATED: null
+  SEARCH_RESULTS_UPDATED: null,
+  SEARCH_RESULTS_CLEARED: null,
+  PRODUCT_UPDATED: null
 });

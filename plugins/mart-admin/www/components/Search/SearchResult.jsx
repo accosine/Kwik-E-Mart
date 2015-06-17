@@ -1,11 +1,15 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 class SearchResultList extends React.Component {
 
   render() {
     if(this.props.items) {
       let createItem = function(item) {
-        return <li key={item._id}>{item._source.title}</li>;
+        let doc = item._source.doc;
+        return <li key={item._id}>
+          <Link params={{productid: item._id}} to="updateproduct">{doc.title}</Link>
+        </li>;
       };
       return <ul>{this.props.items.map(createItem)}</ul>;
     }
@@ -18,6 +22,7 @@ class SearchResultList extends React.Component {
 SearchResultList.propTypes = {
   items: React.PropTypes.array.isRequired
 };
+SearchResultList.defaultProps = {items: []};
 
 export default class SearchResult extends React.Component {
 

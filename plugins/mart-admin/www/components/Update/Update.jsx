@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchStore from '../../stores/SearchStore';
 
 import Search from '../Search/Search';
 
@@ -10,5 +11,10 @@ export default class Update extends React.Component {
         <Search />
       </div>
     );
+  }
+
+  static willTransitionFrom(transition, element) {
+    console.log('transition', transition, element);
+    SearchStore.clear();
   }
 }

@@ -5,11 +5,11 @@ export default class SearchBar extends React.Component {
   render() {
     return (
       <input name="search" onChange={this.props.getResults.bind(this, this)}
-          placehoder="Search..." ref="searchBar" type="text" />
+        placeholder="You know, for search..." ref="searchBar" type="text" />
     );
   }
 }
 
 SearchBar.propTypes = {
-  getResults: React.PropTypes.function.isRequired
+  getResults: React.PropTypes.func.isRequired
 };
