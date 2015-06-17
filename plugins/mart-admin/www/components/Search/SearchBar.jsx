@@ -11,5 +11,5 @@ export default class SearchBar extends React.Component {
 }
 
 SearchBar.propTypes = {
-  getResults: React.PropTypes.function.isRequired
+  getResults: React.PropTypes.func.isRequired
 };
