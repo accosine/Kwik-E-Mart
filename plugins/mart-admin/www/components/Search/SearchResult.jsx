@@ -5,7 +5,7 @@ class SearchResultList extends React.Component {
   render() {
     if(this.props.items) {
       let createItem = function(item) {
-        return <li key={item._id}>{item._source.title}</li>;
+        return <li key={item._id}>{item._source.doc.title}</li>;
       };
       return <ul>{this.props.items.map(createItem)}</ul>;
     }
