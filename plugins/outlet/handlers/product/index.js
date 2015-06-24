@@ -5,7 +5,7 @@ var prefix = 'product-';
 module.exports.get = function (request, reply) {
   var productID = prefix + encodeURIComponent(request.params.productID);
   console.log('GET Product with ID:', productID);
-  request.server.methods.couch.get(request.params.productID,
+  request.server.methods.couch.get(productID,
       function (err, body, headers) {
     if (err) {
       return reply(Boom.notFound('Document not found'));

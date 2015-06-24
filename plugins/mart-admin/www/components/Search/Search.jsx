@@ -37,6 +37,10 @@ export default class Search extends React.Component {
     if(searchQuery.length > 2) {
       AppActions.getSearchResults(searchQuery);
     }
+    else {
+      SearchStore.clear();
+    }
+
   }
 
   render() {
