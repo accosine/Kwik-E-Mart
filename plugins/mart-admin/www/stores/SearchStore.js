@@ -4,7 +4,8 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import {
   API_SEARCH_TYPED,
   REQUEST_PENDING,
-  SEARCH_RESULTS_UPDATED
+  SEARCH_RESULTS_UPDATED,
+  SEARCH_RESULTS_CLEARED
 } from '../constants/AppConstants';
 
 class SearchStore extends EventEmitter {
@@ -41,16 +42,19 @@ class SearchStore extends EventEmitter {
   }
 }
 
-let store = new SearchStore();
+let searchStore = new SearchStore();
 
 AppDispatcher.register((action) => {
   console.log(action);
   switch(action.actionType) {
     case API_SEARCH_TYPED:
-      store.set(action.searchResults);
+      searchStore.set(action.searchResults);
+      break;
+    case SEARCH_RESULTS_CLEARED:
+      searchStore.clear();
       break;
     default:
   }
 });
 
-export default store;
+export default searchStore;

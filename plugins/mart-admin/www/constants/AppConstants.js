@@ -10,5 +10,6 @@ export default keymirror({
   REQUEST_ERROR: null,
 
   SEARCH_RESULTS_UPDATED: null,
+  SEARCH_RESULTS_CLEARED: null,
   PRODUCT_UPDATED: null
 });

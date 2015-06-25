@@ -16,7 +16,7 @@ class ProductStore extends EventEmitter {
 
   set(product) {
     this.data.set(product._id, product);
-    this.emitChange(PRODUCT_UPDATED);
+    this.emitChange();
   }
 
   get(productID) {
@@ -25,7 +25,7 @@ class ProductStore extends EventEmitter {
 
   remove(productID) {
     this.data.delete(productID);
-    this.emitChange(PRODUCT_UPDATED);
+    this.emitChange();
   }
 
   clear() {
@@ -46,16 +46,16 @@ class ProductStore extends EventEmitter {
   }
 }
 
-let store = new ProductStore();
+let productStore = new ProductStore();
 
 AppDispatcher.register((action) => {
   console.log(action);
   switch(action.actionType) {
     case API_PRODUCT_REQUESTED:
-      store.set(action.product);
+      productStore.set(action.product);
       break;
     default:
   }
 });
 
-export default store;
+export default productStore;

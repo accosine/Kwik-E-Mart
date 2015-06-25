@@ -17,28 +17,28 @@ export default class Search extends React.Component {
   constructor(...args) {
     super(...args);
     this.state = getSearchState();
-    this.handleChange = this.handleChange.bind(this);
+    this._handleChange = this._handleChange.bind(this);
   }
 
   componentDidMount() {
-    SearchStore.addChangeListener(this.handleChange);
+    SearchStore.addChangeListener(this._handleChange);
   }
 
   componentWillUnmount() {
-    SearchStore.removeChangeListener(this.handleChange);
+    SearchStore.removeChangeListener(this._handleChange);
   }
 
-  handleChange() {
+  _handleChange() {
     this.setState(getSearchState());
   }
 
-  getResults(childComponent) {
+  _getResults(childComponent) {
     let searchQuery = childComponent.refs.searchBar.getDOMNode().value;
     if(searchQuery.length > 2) {
       AppActions.getSearchResults(searchQuery);
     }
     else {
-      SearchStore.clear();
+      AppActions.clearSearchResults();
     }
 
   }
@@ -46,9 +46,10 @@ export default class Search extends React.Component {
   render() {
     return (
       <div>
-        <SearchBar getResults={this.getResults} />
+        <SearchBar getResults={this._getResults} />
         <SearchResult searchResults={this.state.search} />
       </div>
     );
   }
 }
+

@@ -8,7 +8,8 @@ import {
   API_PRODUCT_REQUESTED,
   REQUEST_PENDING,
   REQUEST_TIMEOUT,
-  REQUEST_ERROR
+  REQUEST_ERROR,
+  SEARCH_RESULTS_CLEARED
 } from '../constants/AppConstants';
 
 export default {
@@ -33,6 +34,13 @@ export default {
 
       AppDispatcher.dispatch(payload);
     });
+  },
+
+  clearSearchResults() {
+    let payload = {
+      actionType: SEARCH_RESULTS_CLEARED
+    };
+    AppDispatcher.dispatch(payload);
   },
 
   getProduct(productID) {

@@ -22,6 +22,7 @@ class SearchResultList extends React.Component {
 SearchResultList.propTypes = {
   items: React.PropTypes.array.isRequired
 };
+SearchResultList.defaultProps = {items: []};
 
 export default class SearchResult extends React.Component {
 
