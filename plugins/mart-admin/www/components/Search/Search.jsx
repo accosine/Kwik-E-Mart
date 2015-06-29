@@ -1,10 +1,10 @@
 import React from 'react';
 
+import AppActions from '../../actions/AppActions';
+import SearchStore from '../../stores/SearchStore';
+
 import SearchBar from './SearchBar';
 import SearchResult from './SearchResult';
-
-import SearchStore from '../../stores/SearchStore';
-import AppActions from '../../actions/AppActions';
 
 function getSearchState() {
   return {
@@ -13,6 +13,10 @@ function getSearchState() {
 }
 
 export default class Search extends React.Component {
+
+  static propTypes = {
+    resultItem: React.PropTypes.func.required
+  };
 
   constructor(...args) {
     super(...args);
@@ -47,7 +51,7 @@ export default class Search extends React.Component {
     return (
       <div>
         <SearchBar getResults={this._getResults} />
-        <SearchResult searchResults={this.state.search} />
+        <SearchResult resultItem={this.props.resultItem} searchResults={this.state.search} />
       </div>
     );
   }

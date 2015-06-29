@@ -1,14 +1,10 @@
 import React from 'react';
 import Router from 'react-router';
-import WebAPI from '../../util/WebAPI';
-import serialize from 'form-serialize';
-import toId from 'to-id';
+
+import AppActions from '../../actions/AppActions';
+import ProductStore from '../../stores/ProductStore.js';
 
 import ProductForm from '../Forms/ProductForm.jsx';
-import ProductStore from '../../stores/ProductStore.js';
-import AppActions from '../../actions/AppActions';
-
-const url1 = new WebAPI('http://192.168.178.6:8080/admin');
 
 function getProductState(productID) {
   return {
@@ -18,9 +14,20 @@ function getProductState(productID) {
 
 export default class UpdateProduct extends React.Component {
 
+  static propTypes = {
+    params: React.PropTypes.object.isRequired
+  };
+
+  static contextTypes = {
+    router: React.PropTypes.func
+  };
+
   constructor(...args) {
     super(...args);
     this._handleChange = this._handleChange.bind(this);
+    this._formHasChanged = this._formHasChanged.bind(this);
+    this._formHasSubmitted = this._formHasSubmitted.bind(this);
+    this.formDelta = new Set();
   }
 
   componentDidMount() {
@@ -37,20 +44,26 @@ export default class UpdateProduct extends React.Component {
     this.setState(getProductState(productID));
   }
 
-  render() {
-    return (
-      <div>
-        <h3>Update</h3>
-        <ProductForm ref='productForm' product={this.state}  />
-        <br/>
-      </div>
-    );
+  _formHasChanged(e) {
+    if (this.state.product[e.target.name].toString() !== e.target.value) {
+      this.formDelta.add(e.target.name);
+    }
+    else {
+      this.formDelta.delete(e.target.name);
+    }
   }
 
+  _formHasSubmitted(serialized) {
+    let productID = this.props.params.productid.split('product-')[1];
+    AppActions.updateProduct(productID, serialized);
+    this.formDelta.clear();
+    let { router } = this.context;
+    router.transitionTo('dashboard');
+  }
 
 /*eslint no-alert: 0 */
   static willTransitionFrom(transition, element) {
-    if (element.refs.productForm._hasChanges()) {
+    if (element.formDelta.size) {
       if (!confirm('You have unsaved information, are you sure you want to leave this page?')) {
         transition.abort();
       }
@@ -62,18 +75,13 @@ export default class UpdateProduct extends React.Component {
     AppActions.getProduct(productID);
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
-    let serialized = serialize(this.refs.productForm.getDOMNode(), { hash: true });
-    // TODO: check if fields are empty
-    let productId = toId(this.refs.productName.getDOMNode().value);
-    url1.createUpdate(productId, serialized, (err, response) => {
-      console.log(err);
-      console.log(response);
-    });
+  render() {
+    return (
+      <div>
+        <h3>Update</h3>
+        <ProductForm formHasChanged={this._formHasChanged} formHasSubmitted={this._formHasSubmitted} product={this.state} ref='productForm' />
+        <br/>
+      </div>
+    );
   }
 }
-
-
-UpdateProduct.defaultProps = {product: {title: "Empty"}};
-UpdateProduct.contextTypes = { router: React.PropTypes.func };

@@ -4,6 +4,9 @@ import keymirror from 'keymirror';
 export default keymirror({
   API_SEARCH_TYPED: null,
   API_PRODUCT_REQUESTED: null,
+  API_PRODUCT_UPDATED: null,
+  API_PRODUCT_CREATED: null,
+  API_PRODUCT_DELETED: null,
 
   REQUEST_PENDING: null,
   REQUEST_TIMEOUT: null,
