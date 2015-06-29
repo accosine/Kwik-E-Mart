@@ -6,7 +6,7 @@ export default class ProductForm extends React.Component {
     if (this.props.product) {
       let product = this.props.product.product;
       return (
-        <form /*onSubmit={this.handleSubmit.bind(this)}*/ ref="productForm">
+        <form onChange={this.props._hasChanged.bind(this)} ref="productForm">
           <label htmlFor="productName">Product Name</label>
           <input defaultValue={product.title} id="productName" name="title" ref="productName" type="text" />
           <label htmlFor="productPrice">Price</label>
@@ -25,10 +25,4 @@ export default class ProductForm extends React.Component {
       );
     }
   }
-
-  _hasChanges() {
-    //TODO: make it work [ ], make it fast [ ], make it pretty [ ]
-    return true;
-  }
-
 }

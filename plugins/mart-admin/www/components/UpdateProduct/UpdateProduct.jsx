@@ -9,6 +9,8 @@ import ProductStore from '../../stores/ProductStore.js';
 import AppActions from '../../actions/AppActions';
 
 const url1 = new WebAPI('http://192.168.178.6:8080/admin');
+let formDelta = false;
+    console.log(formDelta);
 
 function getProductState(productID) {
   return {
@@ -37,20 +39,22 @@ export default class UpdateProduct extends React.Component {
     this.setState(getProductState(productID));
   }
 
-  render() {
-    return (
-      <div>
-        <h3>Update</h3>
-        <ProductForm ref='productForm' product={this.state}  />
-        <br/>
-      </div>
-    );
+  _hasChanged(childComponent) {
+    console.log(formDelta);
+    console.log('uh, oh: _hasChanged was called');
+    formDelta = true;
+    console.log(formDelta);
   }
 
 
+  _formChanged() {
+    // console.log(formDelta);
+    return formDelta;
+  }
 /*eslint no-alert: 0 */
   static willTransitionFrom(transition, element) {
-    if (element.refs.productForm._hasChanges()) {
+    console.log('same old road');
+    if (element._formChanged()) {
       if (!confirm('You have unsaved information, are you sure you want to leave this page?')) {
         transition.abort();
       }
@@ -71,6 +75,16 @@ export default class UpdateProduct extends React.Component {
       console.log(err);
       console.log(response);
     });
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>Update</h3>
+        <ProductForm ref='productForm' product={this.state} _hasChanged={this._hasChanged} />
+        <br/>
+      </div>
+    );
   }
 }
 
