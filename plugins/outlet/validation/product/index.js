@@ -12,7 +12,7 @@ module.exports.post = {
   },
   payload: Joi.object().keys({
         title: Joi.string(),
-        price: Joi.string(),
+        price: Joi.number(),
         description: Joi.string(),
         categories: Joi.array(),
   })

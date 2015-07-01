@@ -6,6 +6,7 @@ const api = new WebAPI('http://192.168.178.6:8080/admin');
 import {
   API_SEARCH_TYPED,
   API_PRODUCT_REQUESTED,
+  API_PRODUCT_UPDATED,
   REQUEST_PENDING,
   REQUEST_TIMEOUT,
   REQUEST_ERROR,
@@ -43,6 +44,28 @@ export default {
     AppDispatcher.dispatch(payload);
   },
 
+  updateProduct(productID, product) {
+    let payload = {
+      actionType: API_PRODUCT_UPDATED,
+      product: REQUEST_PENDING
+    };
+    AppDispatcher.dispatch(payload);
+
+    //TODO: abort pending requests
+
+    api.updateProduct(productID, product, (err, response) => {
+      if (err && err.timeout) {
+        payload.response = REQUEST_TIMEOUT;
+      } else if (response && !response.ok) {
+        payload.response = REQUEST_ERROR;
+      } else {
+        payload.response = response.body;
+      }
+
+      AppDispatcher.dispatch(payload);
+    });
+  },
+
   getProduct(productID) {
     let payload = {
       actionType: API_PRODUCT_REQUESTED,
@@ -59,10 +82,10 @@ export default {
         payload.product = REQUEST_ERROR;
       } else {
         payload.product = response.body;
-        console.log(response);
       }
 
       AppDispatcher.dispatch(payload);
     });
   }
+
 };

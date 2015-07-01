@@ -45,7 +45,6 @@ class SearchStore extends EventEmitter {
 let searchStore = new SearchStore();
 
 AppDispatcher.register((action) => {
-  console.log(action);
   switch(action.actionType) {
     case API_SEARCH_TYPED:
       searchStore.set(action.searchResults);

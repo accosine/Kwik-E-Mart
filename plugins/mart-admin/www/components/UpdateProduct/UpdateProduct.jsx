@@ -23,6 +23,9 @@ export default class UpdateProduct extends React.Component {
   constructor(...args) {
     super(...args);
     this._handleChange = this._handleChange.bind(this);
+    this._formHasChanged = this._formHasChanged.bind(this);
+    this._formHasSubmitted = this._formHasSubmitted.bind(this);
+    this.formDelta = new Set();
   }
 
   componentDidMount() {
@@ -39,22 +42,29 @@ export default class UpdateProduct extends React.Component {
     this.setState(getProductState(productID));
   }
 
-  _hasChanged(childComponent) {
-    console.log(formDelta);
-    console.log('uh, oh: _hasChanged was called');
-    formDelta = true;
-    console.log(formDelta);
+  _formHasChanged(e) {
+    // console.log(e.target.name, e.target.value);
+    if (this.state.product[e.target.name].toString() !== e.target.value) {
+      console.log(e.target.name, ' zu Set hinzufügen');
+      this.formDelta.add(e.target.name);
+    }
+    else {
+      console.log(e.target.name, ' aus Set löschen');
+      this.formDelta.delete(e.target.name);
+    }
   }
 
-
-  _formChanged() {
-    // console.log(formDelta);
-    return formDelta;
+  _formHasSubmitted(serialized) {
+    console.log(serialized);
+    let productID = this.props.params.productid.split('product-')[1];
+    console.log(productID);
+    AppActions.updateProduct(productID, serialized);
   }
+
 /*eslint no-alert: 0 */
   static willTransitionFrom(transition, element) {
     console.log('same old road');
-    if (element._formChanged()) {
+    if (element.formDelta.size) {
       if (!confirm('You have unsaved information, are you sure you want to leave this page?')) {
         transition.abort();
       }
@@ -66,22 +76,11 @@ export default class UpdateProduct extends React.Component {
     AppActions.getProduct(productID);
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
-    let serialized = serialize(this.refs.productForm.getDOMNode(), { hash: true });
-    // TODO: check if fields are empty
-    let productId = toId(this.refs.productName.getDOMNode().value);
-    url1.createUpdate(productId, serialized, (err, response) => {
-      console.log(err);
-      console.log(response);
-    });
-  }
-
   render() {
     return (
       <div>
         <h3>Update</h3>
-        <ProductForm ref='productForm' product={this.state} _hasChanged={this._hasChanged} />
+        <ProductForm ref='productForm' product={this.state} formHasChanged={this._formHasChanged} formHasSubmitted={this._formHasSubmitted} />
         <br/>
       </div>
     );

@@ -49,7 +49,6 @@ class ProductStore extends EventEmitter {
 let productStore = new ProductStore();
 
 AppDispatcher.register((action) => {
-  console.log(action);
   switch(action.actionType) {
     case API_PRODUCT_REQUESTED:
       productStore.set(action.product);
