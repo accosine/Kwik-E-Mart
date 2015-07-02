@@ -7,9 +7,11 @@ class SearchResultList extends React.Component {
     if(this.props.items) {
       let createItem = function(item) {
         let doc = item._source.doc;
-        return <li key={item._id}>
-          <Link params={{productid: item._id}} to="updateproduct">{doc.title}</Link>
-        </li>;
+        return (
+          <li key={item._id}>
+            <Link params={{productid: item._id}} to="updateproduct">{doc.title}</Link>
+          </li>
+        );
       };
       return <ul>{this.props.items.map(createItem)}</ul>;
     }

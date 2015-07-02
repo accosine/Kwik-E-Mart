@@ -1,10 +1,10 @@
 import React from 'react';
 
+import AppActions from '../../actions/AppActions';
+import SearchStore from '../../stores/SearchStore';
+
 import SearchBar from './SearchBar';
 import SearchResult from './SearchResult';
-
-import SearchStore from '../../stores/SearchStore';
-import AppActions from '../../actions/AppActions';
 
 function getSearchState() {
   return {

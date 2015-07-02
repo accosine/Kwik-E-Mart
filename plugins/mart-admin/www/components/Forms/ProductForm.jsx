@@ -14,17 +14,18 @@ export default class ProductForm extends React.Component {
     // split categories seperated by commas and filter empty elements, finally
     // remove leading and/or trailing whitespace
     serialized.categories = serialized.categories
-                              .split(",")
-                              .filter(function(el){ return el })
-                              .map(function(el) { return el.trim() });
+                              .split(',')
+                              .filter(function(el){ return el; })
+                              .map(function(el) { return el.trim(); });
     this.props.formHasSubmitted(serialized);
   }
 
   render() {
+    //TODO: Remove "Request Pending", use spinner component and valid JSX if/else
     if (this.props.product) {
       let product = this.props.product.product;
       return (
-        <form onSubmit={this._onSubmit.bind(this)} onChange={this._onChange.bind(this)} ref="productForm">
+        <form onChange={this._onChange.bind(this)} onSubmit={this._onSubmit.bind(this)} ref="productForm">
           <label htmlFor="productName">Product Name</label>
           <input defaultValue={product.title} id="productName" name="title" ref="productName" type="text" />
           <label htmlFor="productPrice">Price</label>
@@ -44,3 +45,10 @@ export default class ProductForm extends React.Component {
     }
   }
 }
+
+ProductForm.defaultProps = { product: {product: {title: '', categories: []}}};
+ProductForm.propTypes = {
+  formHasChanged: React.PropTypes.func.isRequired,
+  formHasSubmitted: React.PropTypes.func.isRequired,
+  product: React.PropTypes.object.isRequired
+};

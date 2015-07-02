@@ -1,16 +1,10 @@
 import React from 'react';
 import Router from 'react-router';
-import WebAPI from '../../util/WebAPI';
-import serialize from 'form-serialize';
-import toId from 'to-id';
+
+import AppActions from '../../actions/AppActions';
 
 import ProductForm from '../Forms/ProductForm.jsx';
 import ProductStore from '../../stores/ProductStore.js';
-import AppActions from '../../actions/AppActions';
-
-const url1 = new WebAPI('http://192.168.178.6:8080/admin');
-let formDelta = false;
-    console.log(formDelta);
 
 function getProductState(productID) {
   return {
@@ -43,27 +37,24 @@ export default class UpdateProduct extends React.Component {
   }
 
   _formHasChanged(e) {
-    // console.log(e.target.name, e.target.value);
     if (this.state.product[e.target.name].toString() !== e.target.value) {
-      console.log(e.target.name, ' zu Set hinzufügen');
       this.formDelta.add(e.target.name);
     }
     else {
-      console.log(e.target.name, ' aus Set löschen');
       this.formDelta.delete(e.target.name);
     }
   }
 
   _formHasSubmitted(serialized) {
-    console.log(serialized);
     let productID = this.props.params.productid.split('product-')[1];
-    console.log(productID);
     AppActions.updateProduct(productID, serialized);
+    this.formDelta.clear();
+    let { router } = this.context;
+    router.transitionTo('dashboard');
   }
 
 /*eslint no-alert: 0 */
   static willTransitionFrom(transition, element) {
-    console.log('same old road');
     if (element.formDelta.size) {
       if (!confirm('You have unsaved information, are you sure you want to leave this page?')) {
         transition.abort();
@@ -80,13 +71,15 @@ export default class UpdateProduct extends React.Component {
     return (
       <div>
         <h3>Update</h3>
-        <ProductForm ref='productForm' product={this.state} formHasChanged={this._formHasChanged} formHasSubmitted={this._formHasSubmitted} />
+        <ProductForm formHasChanged={this._formHasChanged} formHasSubmitted={this._formHasSubmitted} product={this.state} ref='productForm' />
         <br/>
       </div>
     );
   }
 }
 
-
-UpdateProduct.defaultProps = {product: {title: "Empty"}};
+UpdateProduct.defaultProps = {product: {title: 'Empty'}};
+UpdateProduct.propTypes = {
+  params: React.PropTypes.object.isRequired
+};
 UpdateProduct.contextTypes = { router: React.PropTypes.func };
