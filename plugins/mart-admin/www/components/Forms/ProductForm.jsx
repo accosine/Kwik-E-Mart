@@ -15,8 +15,8 @@ export default class ProductForm extends React.Component {
     // remove leading and/or trailing whitespace
     serialized.categories = serialized.categories
                               .split(',')
-                              .filter(function(el){ return el; })
-                              .map(function(el) { return el.trim(); });
+                              .map(el => el.trim())
+                              .filter(el => el);
     this.props.formHasSubmitted(serialized);
   }
 
