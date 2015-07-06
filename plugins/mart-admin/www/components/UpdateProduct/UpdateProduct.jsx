@@ -2,9 +2,9 @@ import React from 'react';
 import Router from 'react-router';
 
 import AppActions from '../../actions/AppActions';
+import ProductStore from '../../stores/ProductStore.js';
 
 import ProductForm from '../Forms/ProductForm.jsx';
-import ProductStore from '../../stores/ProductStore.js';
 
 function getProductState(productID) {
   return {
@@ -13,6 +13,14 @@ function getProductState(productID) {
 }
 
 export default class UpdateProduct extends React.Component {
+
+  static propTypes = {
+    params: React.PropTypes.object.isRequired
+  };
+
+  static contextTypes = {
+    router: React.PropTypes.func
+  };
 
   constructor(...args) {
     super(...args);
@@ -77,9 +85,3 @@ export default class UpdateProduct extends React.Component {
     );
   }
 }
-
-UpdateProduct.defaultProps = {product: {title: 'Empty'}};
-UpdateProduct.propTypes = {
-  params: React.PropTypes.object.isRequired
-};
-UpdateProduct.contextTypes = { router: React.PropTypes.func };

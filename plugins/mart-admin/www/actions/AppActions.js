@@ -8,6 +8,7 @@ import {
   API_PRODUCT_REQUESTED,
   API_PRODUCT_UPDATED,
   API_PRODUCT_CREATED,
+  API_PRODUCT_DELETED,
   REQUEST_PENDING,
   REQUEST_TIMEOUT,
   REQUEST_ERROR,
@@ -77,6 +78,28 @@ export default {
     //TODO: abort pending requests
 
     api.createProduct(productID, product, (err, response) => {
+      if (err && err.timeout) {
+        payload.response = REQUEST_TIMEOUT;
+      } else if (response && !response.ok) {
+        payload.response = REQUEST_ERROR;
+      } else {
+        payload.response = response.body;
+      }
+
+      AppDispatcher.dispatch(payload);
+    });
+  },
+
+  deleteProduct(productID) {
+    let payload = {
+      actionType: API_PRODUCT_DELETED,
+      product: REQUEST_PENDING
+    };
+    AppDispatcher.dispatch(payload);
+
+    //TODO: abort pending requests
+
+    api.deleteProduct(productID, (err, response) => {
       if (err && err.timeout) {
         payload.response = REQUEST_TIMEOUT;
       } else if (response && !response.ok) {

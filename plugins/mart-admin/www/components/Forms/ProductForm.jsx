@@ -3,6 +3,16 @@ import serialize from 'form-serialize';
 
 export default class ProductForm extends React.Component {
 
+  static propTypes = {
+    formHasChanged: React.PropTypes.func.isRequired,
+    formHasSubmitted: React.PropTypes.func.isRequired,
+    product: React.PropTypes.object.isRequired
+  };
+
+  static defaultProps = {
+    product: {product: {title: '', categories: []}}
+  };
+
   _onChange(e) {
     this.props.formHasChanged(e);
   }
@@ -45,10 +55,3 @@ export default class ProductForm extends React.Component {
     }
   }
 }
-
-ProductForm.defaultProps = { product: {product: {title: '', categories: []}}};
-ProductForm.propTypes = {
-  formHasChanged: React.PropTypes.func.isRequired,
-  formHasSubmitted: React.PropTypes.func.isRequired,
-  product: React.PropTypes.object.isRequired
-};

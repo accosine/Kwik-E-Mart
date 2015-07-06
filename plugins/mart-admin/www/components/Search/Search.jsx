@@ -14,6 +14,10 @@ function getSearchState() {
 
 export default class Search extends React.Component {
 
+  static propTypes = {
+    resultItem: React.PropTypes.func.required
+  };
+
   constructor(...args) {
     super(...args);
     this.state = getSearchState();
@@ -47,7 +51,7 @@ export default class Search extends React.Component {
     return (
       <div>
         <SearchBar getResults={this._getResults} />
-        <SearchResult searchResults={this.state.search} />
+        <SearchResult resultItem={this.props.resultItem} searchResults={this.state.search} />
       </div>
     );
   }

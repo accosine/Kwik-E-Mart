@@ -33,6 +33,12 @@ export default class WebAPI{
     .end(cb);
   }
 
+  deleteProduct(productID, cb) {
+    request
+    .del(this.URL + '/products/' + productID)
+    .end(cb);
+  }
+
   search(type, q, cb) {
     request
     .get(this.URL + '/search')

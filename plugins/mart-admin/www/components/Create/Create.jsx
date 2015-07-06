@@ -7,6 +7,14 @@ import ProductForm from '../Forms/ProductForm.jsx';
 
 export default class Create extends React.Component {
 
+  static propTypes = {
+    params: React.PropTypes.object.isRequired
+  };
+
+  static contextTypes = {
+    router: React.PropTypes.func
+  };
+
   constructor(...args) {
     super(...args);
     this._formHasChanged = this._formHasChanged.bind(this);
@@ -50,5 +58,3 @@ export default class Create extends React.Component {
     );
   }
 }
-
-Create.contextTypes = { router: React.PropTypes.func };
