@@ -24,6 +24,7 @@ export default class UpdateProduct extends React.Component {
 
   constructor(...args) {
     super(...args);
+    this.state = {};
     this._handleChange = this._handleChange.bind(this);
     this._formHasChanged = this._formHasChanged.bind(this);
     this._formHasSubmitted = this._formHasSubmitted.bind(this);
@@ -54,7 +55,7 @@ export default class UpdateProduct extends React.Component {
   }
 
   _formHasSubmitted(serialized) {
-    let productID = this.props.params.productid.split('product-')[1];
+    let productID = this.props.params.productid;
     AppActions.updateProduct(productID, serialized);
     this.formDelta.clear();
     let { router } = this.context;
@@ -71,7 +72,7 @@ export default class UpdateProduct extends React.Component {
   }
 
   static willTransitionTo(transition, params, query) {
-    let productID = params.productid.split('product-')[1];
+    let productID = params.productid;
     AppActions.getProduct(productID);
   }
 
@@ -79,7 +80,7 @@ export default class UpdateProduct extends React.Component {
     return (
       <div>
         <h3>Update</h3>
-        <ProductForm formHasChanged={this._formHasChanged} formHasSubmitted={this._formHasSubmitted} product={this.state} ref='productForm' />
+        <ProductForm formHasChanged={this._formHasChanged} formHasSubmitted={this._formHasSubmitted} product={this.state.product ? this.state.product : ''} ref='productForm' />
         <br/>
       </div>
     );

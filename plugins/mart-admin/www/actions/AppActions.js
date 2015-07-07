@@ -1,7 +1,8 @@
+//  Webpack will inject a 'config' variable into the scope of this module
 import AppDispatcher from '../dispatcher/AppDispatcher';
 import WebAPI from '../util/WebAPI';
 
-const api = new WebAPI('http://192.168.178.6:8080/admin');
+const api = new WebAPI(config.API_URL);
 
 import {
   API_SEARCH_TYPED,

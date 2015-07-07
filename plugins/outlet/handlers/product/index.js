@@ -11,6 +11,7 @@ module.exports.get = function (request, reply) {
       return reply(Boom.notFound('Document not found'));
     }
     else {
+      body._id = body._id.split(prefix)[1];
       return reply(body);
     }
   });

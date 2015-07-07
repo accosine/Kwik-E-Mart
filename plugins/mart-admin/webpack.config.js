@@ -2,15 +2,26 @@ var path = require('path');
 var util = require('util');
 var webpack = require('webpack');
 var pkg = require('./package.json');
-
 var DEBUG = process.env.NODE_ENV !== 'production';
-//var IP = process.env.NODE_ENV.IP;
+var bundleVariables = {};
+
+// Read bundle_variables from package.json and merge with passed ENV_VARIABLES
+// ENV_VARS take precedence. Configure via imports loader which modules will get
+// bundle_variables injected.
+Object.keys(pkg.bundle_variables).forEach(function(key) {
+  if(process.env[key]) {
+    bundleVariables[key] = process.env[key];
+  }
+  else {
+    bundleVariables[key] = pkg.bundle_variables[key];
+  }
+});
 
 var jsBundle = path.join('js', util.format('[name].%s.js', pkg.version));
 
 
-var plugins =[
-  new webpack.optimize.OccurenceOrderPlugin(),
+var plugins = [
+  new webpack.optimize.OccurenceOrderPlugin()
 ];
 
 if (DEBUG) {
@@ -32,6 +43,15 @@ if (DEBUG) {
 
 var loaders = [
   {
+    test: [
+      require.resolve('./www/util/WebAPI.js'),
+      require.resolve('./www/actions/AppActions.js'),
+      require.resolve('./www/components/Delete/Delete.jsx'),
+      require.resolve('./www/components/UpdateProduct/UpdateProduct.jsx')
+    ],
+    loader: 'imports?config=>' + encodeURIComponent(JSON.stringify(bundleVariables))
+  },
+  {
     test: /\.jsx?$/,
     exclude: /node_modules/,
     loader: 'babel-loader?optional=runtime'
@@ -47,10 +67,10 @@ var loaders = [
       'template-html-loader?' + [
         'raw=true',
         'engine=lodash',
-        'version='+pkg.version
+        'version=' + pkg.version
       ].join('&')
     ].join('!')
-  },
+  }
 ];
 
 var entry = {

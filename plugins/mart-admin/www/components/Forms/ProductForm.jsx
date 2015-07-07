@@ -33,7 +33,7 @@ export default class ProductForm extends React.Component {
   render() {
     //TODO: Remove "Request Pending", use spinner component and valid JSX if/else
     if (this.props.product) {
-      let product = this.props.product.product;
+      let product = this.props.product;
       return (
         <form onChange={this._onChange.bind(this)} onSubmit={this._onSubmit.bind(this)} ref="productForm">
           <label htmlFor="productName">Product Name</label>
