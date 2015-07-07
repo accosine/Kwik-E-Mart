@@ -15,7 +15,7 @@ function getSearchState() {
 export default class Search extends React.Component {
 
   static propTypes = {
-    resultItem: React.PropTypes.func.required
+    resultItem: React.PropTypes.func.isRequired
   };
 
   constructor(...args) {
