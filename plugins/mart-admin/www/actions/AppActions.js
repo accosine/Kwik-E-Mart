@@ -13,6 +13,7 @@ import {
   REQUEST_PENDING,
   REQUEST_TIMEOUT,
   REQUEST_ERROR,
+  REQUEST_SUCCESS,
   SEARCH_RESULTS_CLEARED
 } from '../constants/AppConstants';
 
@@ -21,7 +22,9 @@ export default {
   getSearchResults(searchQuery) {
     let payload = {
       actionType: API_SEARCH_TYPED,
-      searchResults: REQUEST_PENDING
+      searchResults: {
+        status: REQUEST_PENDING
+      }
     };
     AppDispatcher.dispatch(payload);
 
@@ -29,11 +32,11 @@ export default {
 
     api.search('product', searchQuery, (err, response) => {
       if (err && err.timeout) {
-        payload.searchResults = REQUEST_TIMEOUT;
+        payload.searchResults = { status: REQUEST_TIMEOUT };
       } else if (response && !response.ok) {
-        payload.searchResults = REQUEST_ERROR;
+        payload.searchResults = { status: REQUEST_ERROR };
       } else {
-        payload.searchResults = response.body;
+        payload.searchResults = { status: REQUEST_SUCCESS, body: response.body };
       }
 
       AppDispatcher.dispatch(payload);

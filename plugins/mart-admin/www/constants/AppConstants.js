@@ -11,6 +11,7 @@ export default keymirror({
   REQUEST_PENDING: null,
   REQUEST_TIMEOUT: null,
   REQUEST_ERROR: null,
+  REQUEST_SUCCESS: null,
 
   SEARCH_RESULTS_UPDATED: null,
   SEARCH_RESULTS_CLEARED: null,

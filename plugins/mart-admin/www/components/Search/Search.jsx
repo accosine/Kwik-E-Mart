@@ -21,9 +21,9 @@ export default class Search extends React.Component {
   constructor(...args) {
     super(...args);
     this.state = getSearchState();
-    this._handleChange = this._handleChange.bind(this);
   }
 
+  // TODO: use ES7 transition decorator when available in react-router
   componentDidMount() {
     SearchStore.addChangeListener(this._handleChange);
   }
@@ -32,7 +32,7 @@ export default class Search extends React.Component {
     SearchStore.removeChangeListener(this._handleChange);
   }
 
-  _handleChange() {
+  _handleChange = () => {
     this.setState(getSearchState());
   }
 

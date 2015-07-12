@@ -10,7 +10,7 @@ export default class ProductForm extends React.Component {
   };
 
   static defaultProps = {
-    product: {product: {title: '', categories: []}}
+    product: {title: '', categories: []}
   };
 
   _onChange(e) {

@@ -12,16 +12,19 @@ export default class Delete extends React.Component {
   };
 
   static contextTypes = {
-    router: React.PropTypes.func
+    router: React.PropTypes.object.isRequired
   };
 
-  constructor(...args) {
-    super(...args);
-    this._deleteProduct = this._deleteProduct.bind(this);
-    this._resultItem = this._resultItem.bind(this);
+  // TODO: use ES7 transition decorator when available in react-router
+  componentDidMount() {
+    this.context.router.addTransitionHook(this.routerWillLeave);
   }
 
-  _resultItem(item) {
+  componentWillUnmount() {
+    this.context.router.removeTransitionHook(this.routerWillLeave);
+  }
+
+  _resultItem = (item) => {
     let doc = item._source.doc;
     return (
       <li key={item._id}>
@@ -31,16 +34,16 @@ export default class Delete extends React.Component {
   }
 
 /*eslint no-alert: 0 */
-  _deleteProduct(productID) {
+  _deleteProduct = (productID) => {
     if (confirm('Are you really, REALLY SURE you want to delete this item?')) {
       AppActions.deleteProduct(productID);
 
       let { router } = this.context;
-      router.transitionTo('dashboard');
+      router.transitionTo('/');
     }
   }
 
-  static willTransitionFrom(transition, element) {
+  routerWillLeave(nextState, router) {
     AppActions.clearSearchResults();
   }
 
