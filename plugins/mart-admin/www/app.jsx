@@ -2,9 +2,8 @@ import './index.html';
 import 'babel-core/polyfill';
 
 import React from 'react';
-import Router from 'react-router';
-
-let {DefaultRoute, Route, NotFoundRoute} = Router;
+import { Router, Route, Redirect } from 'react-router';
+import { history } from 'react-router/lib/HashHistory';
 
 import App from './components/App/App';
 import Dashboard from './components/Dashboard/Dashboard';
@@ -16,16 +15,18 @@ import NotFound from './components/NotFound/NotFound';
 
 /*eslint no-multi-spaces: 0 */
 let routes = (
-  <Route           handler={App}           name="app" path="/">
-    <DefaultRoute  handler={Dashboard}     name="dashboard" />
-    <Route         handler={Create}        name="create" />
-    <Route         handler={Update}        name="update" />
-    <Route         handler={UpdateProduct} name="updateproduct" path="update/product/:productid" />
-    <Route         handler={Delete}        name="delete" />
-    <NotFoundRoute handler={NotFound}      name="notfound" />
-  </Route>
+  <Router history={history}>
+    <Route           component={App} >
+      <Redirect      from="/" to="dashboard"/>
+      <Route         component={Dashboard}     path="dashboard" />
+      <Route         component={Create}        path="create" />
+      <Route         component={Update}        path="update" />
+      <Route         component={UpdateProduct} path="update/product/:productid" />
+      <Route         component={Delete}        path="delete" />
+      <Route         component={NotFound}      path="404" />
+      <Redirect      from="*" to="404"/>
+    </Route>
+  </Router>
 );
 
-Router.run(routes, /*Router.HistoryLocation,*/ (Root) => {
-  React.render(<Root/>, document.getElementById('backend'));
-});
+React.render(routes, document.getElementById('backend'));

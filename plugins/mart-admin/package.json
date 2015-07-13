@@ -37,7 +37,7 @@
     "keymirror": "^0.1.1",
     "lodash": "^3.5.0",
     "react": "^0.13.1",
-    "react-router": "^0.13.3",
+    "react-router": "^1.0.0-beta3",
     "superagent": "^1.1.0",
     "template-html-loader": "0.0.3",
     "to-id": "^1.0.4",

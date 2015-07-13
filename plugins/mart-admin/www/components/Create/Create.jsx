@@ -12,17 +12,24 @@ export default class Create extends React.Component {
   };
 
   static contextTypes = {
-    router: React.PropTypes.func
+    router: React.PropTypes.object.isRequired
   };
 
   constructor(...args) {
     super(...args);
-    this._formHasChanged = this._formHasChanged.bind(this);
-    this._formHasSubmitted = this._formHasSubmitted.bind(this);
     this.formDelta = new Set();
   }
 
-  _formHasChanged(e) {
+  // TODO: use ES7 transition decorator when available in react-router
+  componentDidMount() {
+    this.context.router.addTransitionHook(this.routerWillLeave);
+  }
+
+  componentWillUnmount() {
+    this.context.router.removeTransitionHook(this.routerWillLeave);
+  }
+
+  _formHasChanged = (e) => {
     if (e.target.value) {
       this.formDelta.add(e.target.name);
     }
@@ -31,17 +38,16 @@ export default class Create extends React.Component {
     }
   }
 
-  _formHasSubmitted(serialized) {
+  _formHasSubmitted = (serialized) => {
     let productID = toID(serialized.title);
     AppActions.createProduct(productID, serialized);
     this.formDelta.clear();
-    let { router } = this.context;
-    router.transitionTo('dashboard');
+    this.context.router.transitionTo('/');
   }
 
 /*eslint no-alert: 0 */
-  static willTransitionFrom(transition, element) {
-    if (element.formDelta.size) {
+  routerWillLeave = (nextState, transition) => {
+    if (this.formDelta.size) {
       if (!confirm('You have unsaved information, are you sure you want to leave this page?')) {
         transition.abort();
       }
@@ -51,7 +57,7 @@ export default class Create extends React.Component {
   render() {
     return (
       <div>
-        <h3>Update</h3>
+        <h3>Create</h3>
         <ProductForm formHasChanged={this._formHasChanged} formHasSubmitted={this._formHasSubmitted} ref='productForm' />
         <br/>
       </div>

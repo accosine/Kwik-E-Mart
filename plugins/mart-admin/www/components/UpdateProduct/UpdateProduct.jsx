@@ -19,15 +19,12 @@ export default class UpdateProduct extends React.Component {
   };
 
   static contextTypes = {
-    router: React.PropTypes.func
+    router: React.PropTypes.object.isRequired
   };
 
   constructor(...args) {
     super(...args);
     this.state = {};
-    this._handleChange = this._handleChange.bind(this);
-    this._formHasChanged = this._formHasChanged.bind(this);
-    this._formHasSubmitted = this._formHasSubmitted.bind(this);
     this.formDelta = new Set();
   }
 
@@ -39,13 +36,13 @@ export default class UpdateProduct extends React.Component {
     ProductStore.removeChangeListener(this._handleChange);
   }
 
-  _handleChange() {
+  _handleChange = () => {
     let { router } = this.context;
-    let productID = this.context.router.getCurrentParams().productid;
+    let productID = this.props.params.productid;
     this.setState(getProductState(productID));
   }
 
-  _formHasChanged(e) {
+  _formHasChanged = (e) => {
     if (this.state.product[e.target.name].toString() !== e.target.value) {
       this.formDelta.add(e.target.name);
     }
@@ -54,25 +51,24 @@ export default class UpdateProduct extends React.Component {
     }
   }
 
-  _formHasSubmitted(serialized) {
+  _formHasSubmitted = (serialized) => {
     let productID = this.props.params.productid;
     AppActions.updateProduct(productID, serialized);
     this.formDelta.clear();
-    let { router } = this.context;
-    router.transitionTo('dashboard');
+    this.context.router.transitionTo('/');
   }
 
 /*eslint no-alert: 0 */
-  static willTransitionFrom(transition, element) {
-    if (element.formDelta.size) {
+  routerWillLeave(nextState, router) {
+    if (this.formDelta.size) {
       if (!confirm('You have unsaved information, are you sure you want to leave this page?')) {
-        transition.abort();
+        router.cancelTransition();
       }
     }
   }
 
-  static willTransitionTo(transition, params, query) {
-    let productID = params.productid;
+  componentWillMount() {
+    let productID = this.props.params.productid;
     AppActions.getProduct(productID);
   }
 
