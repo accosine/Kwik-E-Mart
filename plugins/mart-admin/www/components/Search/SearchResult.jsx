@@ -7,7 +7,7 @@ class SearchResultList extends React.Component {
     resultItem: React.PropTypes.func.isRequired
   };
 
-  static defaultProps = {items: []};
+  //static defaultProps = {items: []};
 
   render() {
     if(this.props.items) {
@@ -27,11 +27,21 @@ export default class SearchResult extends React.Component {
   };
 
   render() {
-    return (
-      <div>
-        <h3>Results {this.props.searchResults.total}:</h3>
-        <SearchResultList items={this.props.searchResults.hits} resultItem={this.props.resultItem} />
-      </div>
-    );
+    if (this.props.searchResults.status === 'REQUEST_SUCCESS') {
+      return (
+        <div>
+          <h3>{this.props.searchResults.body.total} Results:</h3>
+          <SearchResultList items={this.props.searchResults.body.hits} resultItem={this.props.resultItem} />
+        </div>
+      );
+    }
+    else if (this.props.searchResults.status === 'REQUEST_PENDING') {
+      return (
+        <div>loading...</div>
+      );
+    }
+    else {
+      return false;
+    }
   }
 }
