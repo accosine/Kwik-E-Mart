@@ -4,6 +4,8 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import {
   API_PRODUCT_REQUESTED,
   REQUEST_PENDING,
+  PRODUCT_CLEARED,
+  PRODUCT_REMOVED,
   PRODUCT_UPDATED
 } from '../constants/AppConstants';
 
@@ -20,7 +22,8 @@ class ProductStore extends EventEmitter {
   }
 
   get(productID) {
-    return this.data.get(productID);
+    return this.data.has(productID) ? this.data.get(productID) : false;
+    // return this.data.get(productID);
   }
 
   remove(productID) {
@@ -52,6 +55,12 @@ AppDispatcher.register((action) => {
   switch(action.actionType) {
     case API_PRODUCT_REQUESTED:
       productStore.set(action.product);
+      break;
+    case PRODUCT_CLEARED:
+      productStore.clear();
+      break;
+    case PRODUCT_REMOVED:
+      productStore.remove(action.product._id);
       break;
     default:
   }

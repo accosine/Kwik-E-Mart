@@ -15,5 +15,7 @@ export default keymirror({
 
   SEARCH_RESULTS_UPDATED: null,
   SEARCH_RESULTS_CLEARED: null,
-  PRODUCT_UPDATED: null
+  PRODUCT_UPDATED: null,
+  PRODUCT_CLEARED: null,
+  PRODUCT_REMOVED: null
 });
