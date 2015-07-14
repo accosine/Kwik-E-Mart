@@ -25,6 +25,7 @@ export default class Update extends React.Component {
     let doc = item._source.doc;
     return (
       <li key={item._id}>
+        {/* Use 'sexy' template strings (yes, 'sexy' - deal with it!) */}
         <Link to={`/update/product/${item._id}`}>{doc.title}</Link>
       </li>
     );
@@ -39,7 +40,7 @@ export default class Update extends React.Component {
     );
   }
 
-  routerWillLeave(nextState, router) {
+  routerWillLeave = (nextState, transition) => {
     AppActions.clearSearchResults();
   }
 

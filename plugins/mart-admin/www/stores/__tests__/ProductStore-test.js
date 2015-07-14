@@ -1,3 +1,4 @@
+jest.dontMock('keymirror');
 jest.dontMock('../ProductStore');
 jest.dontMock('../../constants/AppConstants');
 
@@ -7,7 +8,6 @@ describe('ProductStore', function() {
   var AppDispatcher;
   var ProductStore;
   var callback;
-  console.log(AppConstants);
 
   // mock actions
   var actionProductGet = {

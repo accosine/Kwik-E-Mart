@@ -22,9 +22,7 @@ export default {
   getSearchResults(searchQuery) {
     let payload = {
       actionType: API_SEARCH_TYPED,
-      searchResults: {
-        status: REQUEST_PENDING
-      }
+      searchResults: { status: REQUEST_PENDING }
     };
     AppDispatcher.dispatch(payload);
 

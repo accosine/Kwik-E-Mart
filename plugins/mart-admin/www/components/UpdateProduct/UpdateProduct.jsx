@@ -28,12 +28,15 @@ export default class UpdateProduct extends React.Component {
     this.formDelta = new Set();
   }
 
+  // TODO: use ES7 transition decorator when available in react-router
   componentDidMount() {
     ProductStore.addChangeListener(this._handleChange);
+    this.context.router.addTransitionHook(this.routerWillLeave);
   }
 
   componentWillUnmount() {
     ProductStore.removeChangeListener(this._handleChange);
+    this.context.router.removeTransitionHook(this.routerWillLeave);
   }
 
   _handleChange = () => {
@@ -59,10 +62,10 @@ export default class UpdateProduct extends React.Component {
   }
 
 /*eslint no-alert: 0 */
-  routerWillLeave(nextState, router) {
+  routerWillLeave = (nextState, transition) => {
     if (this.formDelta.size) {
       if (!confirm('You have unsaved information, are you sure you want to leave this page?')) {
-        router.cancelTransition();
+        transition.abort();
       }
     }
   }
