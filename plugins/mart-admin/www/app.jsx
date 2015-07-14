@@ -23,8 +23,7 @@ let routes = (
       <Route         component={Update}        path="update" />
       <Route         component={UpdateProduct} path="update/product/:productid" />
       <Route         component={Delete}        path="delete" />
-      <Route         component={NotFound}      path="404" />
-      <Redirect      from="*" to="404"/>
+      <Route         component={NotFound}      path="*" />
     </Route>
   </Router>
 );

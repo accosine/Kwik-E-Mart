@@ -43,7 +43,7 @@ export default class Delete extends React.Component {
     }
   }
 
-  routerWillLeave(nextState, router) {
+  routerWillLeave(nextState, transition) {
     AppActions.clearSearchResults();
   }
 
