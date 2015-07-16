@@ -56,7 +56,7 @@ describe('ProductStore', function() {
 
   it('puts a product into the store and removes it', function() {
     dispatch(actionProductGet);
-    dispatch(actionProductCleared);
+    dispatch(actionProductRemoved);
     let product = ProductStore.get(actionProductGet.product._id);
     expect(product).toBe(false);
   });
