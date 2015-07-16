@@ -43,12 +43,7 @@ if (DEBUG) {
 
 var loaders = [
   {
-    test: [
-      require.resolve('./www/util/WebAPI.js'),
-      require.resolve('./www/actions/AppActions.js'),
-      require.resolve('./www/components/Delete/Delete.jsx'),
-      require.resolve('./www/components/UpdateProduct/UpdateProduct.jsx')
-    ],
+    test: require.resolve('./www/config.js'),
     loader: 'imports?config=>' + encodeURIComponent(JSON.stringify(bundleVariables))
   },
   {

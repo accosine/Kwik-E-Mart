@@ -1,8 +1,8 @@
-//  Webpack will inject a 'config' variable into the scope of this module
+import { API_URL_PRODUCT_PATH, API_URL_SEARCH_PATH } from '../config';
 import request from 'superagent';
 
-let products = config.API_URL_PRODUCT_PATH;
-let search = config.API_URL_SEARCH_PATH;
+let products = API_URL_PRODUCT_PATH;
+let search = API_URL_SEARCH_PATH;
 
 export default class WebAPI{
   constructor(URL) {

@@ -1,8 +1,8 @@
-//  Webpack will inject a 'config' variable into the scope of this module
+import { API_URL } from '../config';
 import AppDispatcher from '../dispatcher/AppDispatcher';
 import WebAPI from '../util/WebAPI';
 
-const api = new WebAPI(config.API_URL);
+const api = new WebAPI(API_URL);
 
 import {
   API_SEARCH_TYPED,
@@ -20,13 +20,17 @@ import {
 export default {
 
   getSearchResults(searchQuery) {
-    let payload = {
+    let prePayload = {
       actionType: API_SEARCH_TYPED,
       searchResults: { status: REQUEST_PENDING }
     };
-    AppDispatcher.dispatch(payload);
+
+    AppDispatcher.dispatch(prePayload);
 
     //TODO: abort pending requests
+    let payload = {
+      actionType: API_SEARCH_TYPED
+    };
 
     api.search('product', searchQuery, (err, response) => {
       if (err && err.timeout) {
