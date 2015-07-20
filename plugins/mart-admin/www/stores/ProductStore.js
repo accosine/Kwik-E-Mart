@@ -54,13 +54,13 @@ let productStore = new ProductStore();
 AppDispatcher.register((action) => {
   switch(action.actionType) {
     case API_PRODUCT_REQUESTED:
-      productStore.set(action.product);
+      productStore.set(action.response);
       break;
     case PRODUCT_CLEARED:
       productStore.clear();
       break;
     case PRODUCT_REMOVED:
-      productStore.remove(action.product._id);
+      productStore.remove(action.response._id);
       break;
     default:
   }

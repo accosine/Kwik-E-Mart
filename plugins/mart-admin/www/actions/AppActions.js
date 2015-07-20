@@ -53,13 +53,17 @@ export default {
   },
 
   updateProduct(productID, product) {
-    let payload = {
+    let prePayload = {
       actionType: API_PRODUCT_UPDATED,
-      product: REQUEST_PENDING
+      response: REQUEST_PENDING
     };
-    AppDispatcher.dispatch(payload);
+    AppDispatcher.dispatch(prePayload);
 
     //TODO: abort pending requests
+
+    let payload = {
+      actionType: API_PRODUCT_UPDATED
+    };
 
     api.updateProduct(productID, product, (err, response) => {
       if (err && err.timeout) {
@@ -75,13 +79,17 @@ export default {
   },
 
   createProduct(productID, product) {
-    let payload = {
+    let prePayload = {
       actionType: API_PRODUCT_CREATED,
-      product: REQUEST_PENDING
+      response: REQUEST_PENDING
     };
-    AppDispatcher.dispatch(payload);
+    AppDispatcher.dispatch(prePayload);
 
     //TODO: abort pending requests
+
+    let payload = {
+      actionType: API_PRODUCT_CREATED
+    };
 
     api.createProduct(productID, product, (err, response) => {
       if (err && err.timeout) {
@@ -97,13 +105,17 @@ export default {
   },
 
   deleteProduct(productID) {
-    let payload = {
+    let prePayload = {
       actionType: API_PRODUCT_DELETED,
-      product: REQUEST_PENDING
+      response: REQUEST_PENDING
     };
-    AppDispatcher.dispatch(payload);
+    AppDispatcher.dispatch(prePayload);
 
     //TODO: abort pending requests
+
+    let payload = {
+      actionType: API_PRODUCT_DELETED
+    };
 
     api.deleteProduct(productID, (err, response) => {
       if (err && err.timeout) {
@@ -119,21 +131,25 @@ export default {
   },
 
   getProduct(productID) {
-    let payload = {
+    let prePayload = {
       actionType: API_PRODUCT_REQUESTED,
-      product: REQUEST_PENDING
+      response: REQUEST_PENDING
     };
-    AppDispatcher.dispatch(payload);
+    AppDispatcher.dispatch(prePayload);
 
     //TODO: abort pending requests
 
+    let payload = {
+      actionType: API_PRODUCT_REQUESTED
+    };
+
     api.getProduct(productID, (err, response) => {
       if (err && err.timeout) {
-        payload.product = REQUEST_TIMEOUT;
+        payload.response = REQUEST_TIMEOUT;
       } else if (response && !response.ok) {
-        payload.product = REQUEST_ERROR;
+        payload.response = REQUEST_ERROR;
       } else {
-        payload.product = response.body;
+        payload.response = response.body;
       }
 
       AppDispatcher.dispatch(payload);
