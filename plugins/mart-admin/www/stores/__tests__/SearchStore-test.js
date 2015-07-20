@@ -22,6 +22,10 @@ describe('SearchStore', function() {
     actionType: AppConstants.SEARCH_RESULTS_CLEARED
   };
 
+  let actionUnrelated = {
+    actionType: AppConstants.API_PRODUCT_REQUESTED,
+  };
+
   beforeEach(function() {
     AppDispatcher = require('../../dispatcher/AppDispatcher');
     SearchStore = require('../SearchStore');
@@ -49,6 +53,34 @@ describe('SearchStore', function() {
     dispatch(actionSearchCleared);
     let searchResults = SearchStore.get();
     expect(searchResults).toEqual({});
+  });
+
+  it('registers a function with the changeListener and calls it', function() {
+     let callback = jest.genMockFunction();
+     SearchStore.addChangeListener(callback);
+     dispatch(actionSearchTyped);
+     expect(callback).toBeCalled();
+  });
+
+  it('unregisters a function with the changeListener ensures it is not called',
+       function() {
+     let callback = jest.genMockFunction();
+     SearchStore.addChangeListener(callback);
+     dispatch(actionSearchTyped);
+     let emitIncidents = callback.mock.calls.length;
+
+     SearchStore.removeChangeListener(callback);
+     dispatch(actionSearchTyped);
+     expect(emitIncidents).toEqual(callback.mock.calls.length);
+  });
+
+  it('puts a product into the store and removes it', function() {
+    SearchStore.set = jest.genMockFunction();
+    SearchStore.clear = jest.genMockFunction();
+
+    dispatch(actionUnrelated);
+    expect(SearchStore.set).not.toBeCalled();
+    expect(SearchStore.clear).not.toBeCalled();
   });
 
 });
