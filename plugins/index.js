@@ -14,6 +14,9 @@ var plugins = [
   },
   {
     register: require('./mart-admin')
+  },
+  {
+    register: require('./cash-flow')
   }
 ];
 
