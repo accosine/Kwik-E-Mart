@@ -32,7 +32,7 @@
   ],
   "license": "BSD-2-Clause",
   "bundle_variables": {
-    "API_URL": "localhost:8080/admin",
+    "API_URL": "http://localhost:8080/admin",
     "API_URL_PRODUCT_PATH": "products",
     "API_URL_SEARCH_PATH": "search"
   },
