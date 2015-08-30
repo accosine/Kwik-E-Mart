@@ -1,0 +1,17 @@
+{
+  "name": "inlet",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "hapi-justify": "0.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "boom": "^2.7.1",
+    "joi": "^6.4.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

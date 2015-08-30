@@ -13,6 +13,9 @@ var plugins = [
     register: require('./outlet')
   },
   {
+    register: require('./inlet')
+  },
+  {
     register: require('./mart-admin')
   },
   {
