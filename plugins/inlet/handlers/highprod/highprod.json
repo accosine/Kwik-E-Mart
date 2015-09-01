@@ -1,0 +1,7 @@
+{"total_rows":5,"offset":0,"rows":[
+{"id":"product-Le_Krusty_Burger","title":"Le Krusty Burger","description":"Le Krusty Burger is a fast-food burger restaurant chain in France that is based on Krusty...","price":0.98999999999999999112,"categories":["Krusty Burger","Krusty Merchandise"],"image":"http://vignette3.wikia.nocookie.net/simpsons/images/4/49/Le_Krusty_Burger.png/revision/latest"},
+{"id":"product-TiVo","title":"TiVo","description":"TiVo is a personal video recorder that is used with the TV and records TV Shows and skips the...","price":2.9900000000000002132,"categories":["Electronics"]},
+{"id":"product-THX","title":"THX","description":"THX is a real-life sound system used for several movies. The noise is so loud it caused the room...","price":11.990000000000000213,"categories":["Electronics"],"image":"http://vignette4.wikia.nocookie.net/simpsons/images/f/fa/THX.png/revision/latest"},
+{"id":"product-Words_with_Enemies","title":"Words with Enemies","description":"Words with Enemies is an app on the MyPad that Homer owns. While searching for a game to play...","price":12.990000000000000213,"categories":["Electronics"]},
+{"id":"product-Zii_Sports","title":"Zii Sports","description":"Zii Sports was a game for the Funtendo Zii. Residents at the Springfield Retirement Castle often...","price":17.989999999999998437,"categories":["Electronics"]}
+]}
